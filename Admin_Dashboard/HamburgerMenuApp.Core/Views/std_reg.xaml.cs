@@ -5,15 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using MySql.Data.MySqlClient;
 using System.Configuration;
+using System.Data;
 
 namespace HamburgerMenuApp.Core.Views
 {
@@ -38,6 +32,7 @@ namespace HamburgerMenuApp.Core.Views
                 MySqlCommand cmd = new MySqlCommand(query, con);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Student Detail added sucessfully");
+                loadgrid();
             }
             catch(Exception ex)
             {
@@ -62,6 +57,74 @@ namespace HamburgerMenuApp.Core.Views
             string passCode = DateTime.Now.Ticks.ToString();
             string pass = BitConverter.ToString(new System.Security.Cryptography.SHA512CryptoServiceProvider().ComputeHash(Encoding.Default.GetBytes(passCode))).Replace("-", String.Empty);
             return pass.Substring(0, lengthOfPassword);
+        }
+
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            std_name.Focus();
+            loadgrid();
+        }
+
+        public void loadgrid()
+        {
+            try
+            {
+                string query = "Select * from std_register order by id desc";
+                MySqlConnection con = new MySqlConnection(constring);
+                con.Open();
+                MySqlCommand cmd = new MySqlCommand(query, con);
+                DataSet ds = new DataSet();
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                cmd = da.SelectCommand;
+                da.Fill(ds);
+                if (ds != null && ds.Tables.Count > 0)
+                {
+                    student_grid.ItemsSource = ds.Tables[0].DefaultView;
+                }
+                con.Close();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void Search_std_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                string query;
+                if (search_std_name.Text != string.Empty)
+                {
+                    query = "Select * from std_register where class='" + search_class_dept.Text + "' and sem ='" + search_sem.Text + "' and name='" + search_std_name.Text + "' or reg_no ='"+ search_std_name.Text + "'";
+                }
+                else
+                {
+                    query = "Select * from std_register where class='" + search_class_dept.Text + "' and sem ='" + search_sem.Text + "'";
+                }
+                MySqlConnection con = new MySqlConnection(constring);
+                con.Open();
+                MySqlCommand cmd = new MySqlCommand(query, con);
+                DataSet ds = new DataSet();
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                cmd = da.SelectCommand;
+                da.Fill(ds);
+                if (ds != null && ds.Tables[0].Rows.Count > 0)
+                {
+                    student_grid.ItemsSource = ds.Tables[0].DefaultView;
+                }
+                else
+                {
+                    MessageBox.Show("Student details not found");
+                }
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
         }
     }
 }

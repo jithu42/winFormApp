@@ -11,7 +11,7 @@
                       WindowStartupLocation="CenterScreen"
                       Height="486"
                       Width="752"
-                      WindowState="Maximized">
+                      WindowState="Maximized" Background="LightBlue">
 
     <Grid>
 
@@ -81,14 +81,14 @@
                         </controls:HamburgerMenuGlyphItem.Tag>
                     </controls:HamburgerMenuGlyphItem>
 
-                    <controls:HamburgerMenuGlyphItem Glyph="&#xE8FA;"
-                                                     Label="Add Student">
+                    <controls:HamburgerMenuGlyphItem Glyph="&#xE8B8;"
+                                                     Label="Student Details">
                         <controls:HamburgerMenuGlyphItem.Tag>
                             <views:std_reg />
                         </controls:HamburgerMenuGlyphItem.Tag>
                     </controls:HamburgerMenuGlyphItem>
 
-                    <controls:HamburgerMenuGlyphItem Glyph="&#xEA8C;"
+                    <controls:HamburgerMenuGlyphItem Glyph="&#xE716;"
                                                      Label="Add Teacher">
                         <controls:HamburgerMenuGlyphItem.Tag>
                             <views:teacher_reg/>
