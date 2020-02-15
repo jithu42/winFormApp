@@ -27,7 +27,7 @@ namespace HamburgerMenuApp.Core.Views
 
         private void Btn_clear_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("test");
         }
 
         private void Btn_add_Click(object sender, RoutedEventArgs e)
