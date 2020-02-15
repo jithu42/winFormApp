@@ -1,0 +1,53 @@
+﻿<UserControl x:Class="HamburgerMenuApp.Core.Views.std_reg"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HamburgerMenuApp.Core.Views"
+             mc:Ignorable="d" 
+            d:DesignHeight="768" d:DesignWidth="1280" Background="LightBlue">
+    <Grid Margin="0,0,-518,-741" >
+        <Border BorderBrush="SkyBlue" BorderThickness="2" Height="741" Margin="10,54,479,0" VerticalAlignment="Top"/>
+        <Label x:Name="label" Content="Add Student Detail" FontSize="22"  FontWeight="Bold" FontFamily="Times New Roman" HorizontalAlignment="Left" Margin="10,19,0,0" VerticalAlignment="Top" Width="286" Height="52"/>
+        <Label x:Name="label2" Content="Student Name" HorizontalAlignment="Left" Margin="18,76,0,0" VerticalAlignment="Top"  FontFamily="Times New Roman" FontSize="15" FontWeight="Bold" />
+        <TextBox x:Name="std_name" HorizontalAlignment="Left" Height="23" Margin="153,77,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="174"/>
+        <Label x:Name="label3" Content="Date of Birth" HorizontalAlignment="Left" Margin="18,388,0,0" VerticalAlignment="Top"  FontFamily="Times New Roman" FontSize="15" FontWeight="Bold"/>
+        <TextBox x:Name="dob" HorizontalAlignment="Left" Height="23" Margin="153,388,0,0" MaxLength="4" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="174"/>
+        <Label x:Name="label4" Content="Register No." HorizontalAlignment="Left" Margin="18,114,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="15" FontWeight="Bold"/>
+        <TextBox x:Name="reg_no" HorizontalAlignment="Left" Height="23" Margin="153,114,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="174"/>
+        <Button x:Name="btn_add" Content="Add" HorizontalAlignment="Left" Background="SkyBlue" Margin="153,430,0,0" VerticalAlignment="Top" Width="75"  FontFamily="Times New Roman" FontSize="11" FontWeight="Bold" Click="btn_add_Click" />
+        <TextBox x:Name="cal" HorizontalAlignment="Left" Height="23" Margin="374,478,0,0" TextWrapping="Wrap" Text="" Visibility="Hidden" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="vh_type" HorizontalAlignment="Left" Height="23" Margin="391,549,0,0" Visibility="Hidden" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="exp" HorizontalAlignment="Left" Height="23" Margin="251,619,0,0" Visibility="Hidden" MaxLength="10" Text="" VerticalAlignment="Top" Width="174"/>
+        <TextBox x:Name="zz" HorizontalAlignment="Left" Height="23" Margin="564,663,0,0" Visibility="Hidden" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="hh" HorizontalAlignment="Left" Height="23" Margin="251,674,0,0" Visibility="Hidden" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="174"/>
+        <Label x:Name="label2_Copy" Content="Class" HorizontalAlignment="Left" Margin="18,154,0,0" VerticalAlignment="Top"  FontFamily="Times New Roman" FontSize="15" FontWeight="Bold" />
+        <Label x:Name="label4_Copy" Content="Semester" HorizontalAlignment="Left" Margin="18,192,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="15" FontWeight="Bold"/>
+        <Label x:Name="label2_Copy1" Content="Phone No." HorizontalAlignment="Left" Margin="18,233,0,0" VerticalAlignment="Top"  FontFamily="Times New Roman" FontSize="15" FontWeight="Bold" />
+        <TextBox x:Name="ph_no" HorizontalAlignment="Left" Height="23" Margin="153,234,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="174"/>
+        <Label x:Name="label4_Copy1" Content="Email ID" HorizontalAlignment="Left" Margin="18,271,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="15" FontWeight="Bold"/>
+        <TextBox x:Name="email" HorizontalAlignment="Left" Height="23" Margin="153,271,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="174"/>
+        <Label x:Name="label2_Copy2" Content="Address" HorizontalAlignment="Left" Margin="18,311,0,0" VerticalAlignment="Top"  FontFamily="Times New Roman" FontSize="15" FontWeight="Bold" />
+        <TextBox x:Name="address" HorizontalAlignment="Left" Height="23" Margin="153,312,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="174"/>
+        <Label x:Name="label4_Copy2" Content="Gender" HorizontalAlignment="Left" Margin="18,349,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="15" FontWeight="Bold"/>
+        <ComboBox x:Name="gender" HorizontalAlignment="Left" Margin="153,350,0,0" VerticalAlignment="Top" Width="174" RenderTransformOrigin="-5.742,3.115">
+            <ComboBoxItem Content="Male"></ComboBoxItem>
+            <ComboBoxItem Content="Female"></ComboBoxItem>
+        </ComboBox>
+        <ComboBox x:Name="class_dept" HorizontalAlignment="Left" Margin="153,155,0,0" VerticalAlignment="Top" Width="174" RenderTransformOrigin="-5.742,3.115">
+            <ComboBoxItem Content="BCA"></ComboBoxItem>
+            <ComboBoxItem Content="BBM"></ComboBoxItem>
+            <ComboBoxItem Content="BCOM"></ComboBoxItem>
+        </ComboBox>
+        <ComboBox x:Name="sem" HorizontalAlignment="Left" Margin="153,198,0,0" VerticalAlignment="Top" Width="174" RenderTransformOrigin="-5.742,3.115">
+            <ComboBoxItem Content="1"></ComboBoxItem>
+            <ComboBoxItem Content="2"></ComboBoxItem>
+            <ComboBoxItem Content="3"></ComboBoxItem>
+            <ComboBoxItem Content="4"></ComboBoxItem>
+            <ComboBoxItem Content="5"></ComboBoxItem>
+            <ComboBoxItem Content="6"></ComboBoxItem>
+        </ComboBox>
+        <Button x:Name="btn_clear" Content="Clear" HorizontalAlignment="Left" Background="SkyBlue" Margin="251,430,0,0" VerticalAlignment="Top" Width="75"  FontFamily="Times New Roman" FontSize="11" FontWeight="Bold" Click="btn_clear_Click" />
+
+    </Grid>
+</UserControl>
