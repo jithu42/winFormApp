@@ -89,7 +89,7 @@
                     </controls:HamburgerMenuGlyphItem>
 
                     <controls:HamburgerMenuGlyphItem Glyph="&#xE716;"
-                                                     Label="Add Teacher">
+                                                     Label="Faculty Details">
                         <controls:HamburgerMenuGlyphItem.Tag>
                             <views:teacher_reg/>
                         </controls:HamburgerMenuGlyphItem.Tag>

@@ -60,6 +60,8 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="emailClass.cs" />
+    <Compile Include="MysqlClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -74,8 +76,20 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="SelectedItemToContentConverter.cs" />
+    <Compile Include="Views\assignments.xaml.cs">
+      <DependentUpon>assignments.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\events.xaml.cs">
+      <DependentUpon>events.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\home.xaml.cs">
       <DependentUpon>home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\leaves.xaml.cs">
+      <DependentUpon>leaves.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\qpaper.xaml.cs">
+      <DependentUpon>qpaper.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\std_reg.xaml.cs">
       <DependentUpon>std_reg.xaml</DependentUpon>
@@ -95,7 +109,23 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Views\assignments.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\events.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\leaves.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\qpaper.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
