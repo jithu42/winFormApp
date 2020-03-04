@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Configuration;
 using MySql.Data.MySqlClient;
+using System.Data;
 
 namespace HamburgerMenuApp.Core.Views
 {
@@ -26,33 +27,98 @@ namespace HamburgerMenuApp.Core.Views
         {
             InitializeComponent();
         }
-        string constring = ConfigurationManager.AppSettings["Constring"];
+
+        static public string Username_emailId
+        {
+            get { return ConfigurationManager.AppSettings["EmailUsername"]; }
+        }
+        static public string constring
+        {
+            get { return ConfigurationManager.AppSettings["Constring"]; }
+        }
+
+        MysqlClass _mysql = new MysqlClass(constring);
+        const string message1 = "\n\nYour account has been registered at Anne's College App. For your convience the below are the credentials to login into the Mobile application.\n";
+        const string message2 = "\n\nThank You. Have a nice day !!";
+
         private void Btn_clear_Click(object sender, RoutedEventArgs e)
         {
-            teacher_name.Text = string.Empty;
-            staff_id.Text = string.Empty;
-            //class_dept.Text = string.Empty;
-            ph_no.Text = string.Empty;
-            email.Text = string.Empty;
-            address.Text = string.Empty;
-            dob.Text = string.Empty;
+            clear();
         }
 
         private void Btn_add_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                MySqlConnection con = new MySqlConnection(constring);
-                con.Open();
-                string query = "insert into teacher_register(teach_id,password,teach_name,dept,desig,ph_no,email,address,gender,dob) values ('" + staff_id.Text + "','" + getpassword() + "','" + teacher_name.Text + "','" + department.Text + "','" + Designation.Text + "','" + ph_no.Text + "','" + email.Text + "','" + address.Text + "','" + gender.Text + "','" + dob.Text + "')";
-                MySqlCommand cmd = new MySqlCommand(query, con);
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Teacher Detail added sucessfully");
+                string pass = getpassword();
+                if (!validate())
+                {
+                    return;
+                }
+                if (IsAlreadyRegistered())
+                {
+                    MessageBox.Show("The Faculty record with " + reg_no.Text + " already Exists", "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+                if (_mysql == null)
+                {
+                    _mysql = new MysqlClass(constring);
+                }
+                string query = "insert into std_register(name,reg_no,password,dept,sem,designation,ph_no,email,address,gender,dob) values ('" + std_name.Text + "','" + reg_no.Text + "','" + pass + "','" + class_dept.Text + "','" + sem.Text + "','faculty','" + ph_no.Text + "','" + email.Text + "','" + address.Text + "','" + gender.Text + "','" + dob.Text + "')";
+                _mysql.Execute_query(query);
+                bool status = emailClass.SendEmail(email.Text, Username_emailId, "Application - Registration", "Dear " + std_name.Text + "," + message1 + "Username: " + reg_no.Text + " Password: " + pass + message2);
+                if (status)
+                {
+                    MessageBox.Show("Faculty Detail added sucessfully", "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                else
+                {
+                    string delquery = "delete from std_register where reg_no = '" + reg_no.Text + "'";
+                    _mysql.Execute_query(delquery);
+                    MessageBox.Show("Check your internet connection", "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+                _mysql.CloseConnection();
+                _mysql = null;
+                loadgrid();
+                clear();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message, "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Exclamation);
             }
+        }
+
+        public void clear()
+        {
+            std_name.Text = string.Empty;
+            reg_no.Text = string.Empty;
+            ph_no.Text = string.Empty;
+            email.Text = string.Empty;
+            address.Text = string.Empty;
+            dob.Text = string.Empty;
+            class_dept.SelectedIndex = 0;
+            sem.SelectedIndex = 0;
+            gender.SelectedIndex = 0;
+            search_class_dept.SelectedIndex = 0;
+            search_sem.SelectedIndex = 0;
+            search_std_name.Text = string.Empty;
+            btn_del.IsEnabled = false;
+            btn_update.IsEnabled = false;
+        }
+
+        public bool validate()
+        {
+            if (string.IsNullOrWhiteSpace(std_name.Text))
+            {
+                MessageBox.Show("Enter the Faculty Name");
+                return false;
+            }
+            else if (string.IsNullOrWhiteSpace(reg_no.Text))
+            {
+                MessageBox.Show("Enter the Register Number");
+                return false;
+            }
+            return true;
         }
 
         private string getpassword()
@@ -61,6 +127,196 @@ namespace HamburgerMenuApp.Core.Views
             string passCode = DateTime.Now.Ticks.ToString();
             string pass = BitConverter.ToString(new System.Security.Cryptography.SHA512CryptoServiceProvider().ComputeHash(Encoding.Default.GetBytes(passCode))).Replace("-", String.Empty);
             return pass.Substring(0, lengthOfPassword);
+        }
+
+        public void loadgrid()
+        {
+            try
+            {
+                if (_mysql == null)
+                {
+                    _mysql = new MysqlClass(constring);
+                }
+                string query = "Select * from std_register where designation='faculty' order by id desc";
+                DataSet ds = _mysql.ExecuteQueryReturnDataset(query);
+                if (ds != null && ds.Tables.Count > 0)
+                {
+                    faculty_grid.ItemsSource = ds.Tables[0].DefaultView;
+                }
+                _mysql.CloseConnection();
+                _mysql = null;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            }
+        }
+
+        private void Btn_update_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (!validate())
+                {
+                    return;
+                }
+                if (_mysql == null)
+                {
+                    _mysql = new MysqlClass(constring);
+                }
+                string query = "update std_register set name = '" + std_name.Text + "', reg_no = '" + reg_no.Text + "', dept = '" + class_dept.Text + "' , sem = '" + sem.Text + "', ph_no = '" + ph_no.Text + "', email = '" + email.Text + "', address = '" + address.Text + "', gender = '" + gender.Text + "', dob = '" + dob.Text + "' where reg_no = '" + reg_no.Text + "'";
+                MessageBoxResult result = MessageBox.Show("Are you sure?, The Faculty record(" + reg_no.Text + ") will be updated.", "Confirmation", MessageBoxButton.OKCancel, MessageBoxImage.Warning);
+                if (result == MessageBoxResult.OK)
+                {
+                    _mysql.Execute_query(query);
+                    MessageBox.Show("The Faculty Record has been deleted successfully.", "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                else
+                {
+
+                }
+                _mysql.CloseConnection();
+                _mysql = null;
+                loadgrid();
+                btn_add.IsEnabled = true;
+                clear();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void Btn_del_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrWhiteSpace(reg_no.Text))
+                {
+                    MessageBox.Show("The Register Number field cannot be empty", "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+                if (_mysql == null)
+                {
+                    _mysql = new MysqlClass(constring);
+                }
+                string delquery = "delete from std_register where reg_no = '" + reg_no.Text + "'";
+                MessageBoxResult result = MessageBox.Show("Are you sure?, The faculty record(" + reg_no.Text + ") will be deleted.", "Confirmation", MessageBoxButton.OKCancel, MessageBoxImage.Warning);
+                if (result == MessageBoxResult.OK)
+                {
+                    _mysql.Execute_query(delquery);
+                    MessageBox.Show("The Faculty Record has been deleted successfully.", "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                else
+                {
+
+                }
+                _mysql.CloseConnection();
+                _mysql = null;
+                loadgrid();
+                btn_add.IsEnabled = true;
+                clear();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void Search_faculty_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (_mysql == null)
+                {
+                    _mysql = new MysqlClass(constring);
+                }
+                string query = string.Empty;
+                if (search_std_name.Text != string.Empty)
+                {
+                    query = "Select * from std_register where dept='" + search_class_dept.Text + "' and sem ='" + search_sem.Text + "' and name='" + search_std_name.Text + "' or reg_no ='" + search_std_name.Text + "' and designation = 'faculty'";
+                }
+                else
+                {
+                    query = "Select * from std_register where dept='" + search_class_dept.Text + "' and sem ='" + search_sem.Text + "' and designation = 'faculty'";
+                }
+                DataSet ds = _mysql.ExecuteQueryReturnDataset(query);
+                if (ds != null && ds.Tables[0].Rows.Count > 0)
+                {
+                    faculty_grid.ItemsSource = ds.Tables[0].DefaultView;
+                }
+                else
+                {
+                    MessageBox.Show("Faculty details not found", "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                }
+                _mysql.CloseConnection();
+                _mysql = null;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void Btn_search_clear_Click(object sender, RoutedEventArgs e)
+        {
+            search_class_dept.SelectedIndex = 0;
+            search_sem.SelectedIndex = 0;
+            search_std_name.Text = string.Empty;
+            loadgrid();
+        }
+
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            clear();
+            std_name.Focus();
+            loadgrid();
+        }
+
+        private bool IsAlreadyRegistered()
+        {
+            try
+            {
+                if (_mysql == null)
+                {
+                    _mysql = new MysqlClass(constring);
+                }
+                string query = "Select * from std_register where reg_no='" + reg_no.Text + "'";
+                DataSet ds = _mysql.ExecuteQueryReturnDataset(query);
+                if (ds != null && ds.Tables[0].Rows.Count > 0)
+                {
+                    _mysql.CloseConnection();
+                    _mysql = null;
+                    return true;
+                }
+                _mysql.CloseConnection();
+                _mysql = null;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            return false;
+        }
+
+        private void Faculty_grid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            DataRowView dataRow = (DataRowView)faculty_grid.SelectedItem;
+            std_name.Text = dataRow.Row.ItemArray[1].ToString();
+            reg_no.Text = dataRow.Row.ItemArray[2].ToString();
+            var _dept_class = class_dept.Items.OfType<ComboBoxItem>().FirstOrDefault(x => x.Content.ToString() == dataRow.Row.ItemArray[4].ToString());
+            int _class_index = class_dept.SelectedIndex = class_dept.Items.IndexOf(_dept_class);
+            var _sem = sem.Items.OfType<ComboBoxItem>().FirstOrDefault(x => x.Content.ToString() == dataRow.Row.ItemArray[5].ToString());
+            int _sem_index = sem.SelectedIndex = sem.Items.IndexOf(_sem);
+            ph_no.Text = dataRow.Row.ItemArray[7].ToString();
+            email.Text = dataRow.Row.ItemArray[8].ToString();
+            address.Text = dataRow.Row.ItemArray[9].ToString();
+            var _gender = gender.Items.OfType<ComboBoxItem>().FirstOrDefault(x => x.Content.ToString() == dataRow.Row.ItemArray[10].ToString());
+            int _gender_index = gender.SelectedIndex = gender.Items.IndexOf(_gender);
+            dob.Text = dataRow.Row.ItemArray[11].ToString();
+            btn_del.IsEnabled = true;
+            btn_update.IsEnabled = true;
+            btn_add.IsEnabled = false;
         }
     }
 }
