@@ -16,7 +16,7 @@
         <Label x:Name="label2" Content="Faculty Name" HorizontalAlignment="Left" Margin="18,26,0,0" VerticalAlignment="Top"  FontFamily="Times New Roman" FontSize="15" FontWeight="Bold" />
         <TextBox x:Name="std_name" HorizontalAlignment="Left" Height="23" Margin="153,27,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="272" TabIndex="3"/>
         <Label x:Name="label3" Content="Date of Birth" HorizontalAlignment="Left" Margin="18,402,0,0" VerticalAlignment="Top"  FontFamily="Times New Roman" FontSize="15" FontWeight="Bold"/>
-        <TextBox x:Name="dob" HorizontalAlignment="Left" Height="23" Margin="153,402,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="174" TabIndex="11"/>
+        <DatePicker  x:Name="dob" HorizontalAlignment="Left" Margin="153,403,0,0" VerticalAlignment="Top" Width="155" Focusable="False"/>
         <Label x:Name="label4" Content="Faculty ID" HorizontalAlignment="Left" Margin="18,64,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="15" FontWeight="Bold"/>
         <TextBox x:Name="reg_no" HorizontalAlignment="Left" Height="23" Margin="153,64,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="272" TabIndex="4"/>
         <Button x:Name="btn_add" Content="Add" HorizontalAlignment="Left" Background="SkyBlue" Margin="153,444,0,0" VerticalAlignment="Top" Width="75"  FontFamily="Times New Roman" FontSize="11" FontWeight="Bold" Click="Btn_add_Click" TabIndex="12" />
@@ -51,17 +51,17 @@
         </ComboBox>
         <Button x:Name="btn_clear" Content="Clear" HorizontalAlignment="Left" Background="SkyBlue" Margin="252,487,0,0" VerticalAlignment="Top" Width="75"  FontFamily="Times New Roman" FontSize="11" FontWeight="Bold" Click="Btn_clear_Click" TabIndex="13" />
         <Border BorderBrush="SkyBlue" BorderThickness="2" HorizontalAlignment="Left" Height="531" Margin="465,13,0,0" VerticalAlignment="Top" Width="755"/>
-        <Label x:Name="label2_Copy3" Content="Search Faculty" HorizontalAlignment="Left" Margin="494,67,0,0" VerticalAlignment="Top"  FontFamily="Times New Roman" FontSize="15" FontWeight="Bold" />
-        <TextBox x:Name="search_std_name" HorizontalAlignment="Left" Height="23" Margin="607,67,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="155"/>
-        <Label x:Name="label2_Copy4" Content="Department" HorizontalAlignment="Left" Margin="494,29,0,0" VerticalAlignment="Top"  FontFamily="Times New Roman" FontSize="15" FontWeight="Bold" />
-        <Label x:Name="label4_Copy3" Content="Semester" HorizontalAlignment="Left" Margin="775,26,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="15" FontWeight="Bold"/>
-        <ComboBox x:Name="search_class_dept" HorizontalAlignment="Left" Margin="607,29,0,0" VerticalAlignment="Top" Width="155" RenderTransformOrigin="-5.742,3.115"  >
+        <Label x:Name="label2_Copy3" Content="Search Faculty" HorizontalAlignment="Left" Margin="494,64,0,0" VerticalAlignment="Top"  FontFamily="Times New Roman" FontSize="15" FontWeight="Bold" />
+        <TextBox x:Name="search_std_name" HorizontalAlignment="Left" Height="23" Margin="607,64,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="155"/>
+        <Label x:Name="label2_Copy4" Content="Department" HorizontalAlignment="Left" Margin="494,26,0,0" VerticalAlignment="Top"  FontFamily="Times New Roman" FontSize="15" FontWeight="Bold" />
+        <Label x:Name="label4_Copy3" Content="Semester" HorizontalAlignment="Left" Margin="777,26,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="15" FontWeight="Bold"/>
+        <ComboBox x:Name="search_class_dept" HorizontalAlignment="Left" Margin="607,27,0,0" VerticalAlignment="Top" Width="155" RenderTransformOrigin="-5.742,3.115"  >
             <ComboBoxItem Content="--Select Department--" Selector.IsSelected="True"/>
             <ComboBoxItem Content="BCA"/>
             <ComboBoxItem Content="BBM"/>
             <ComboBoxItem Content="BCOM"/>
         </ComboBox>
-        <ComboBox x:Name="search_sem" HorizontalAlignment="Left" Margin="865,26,0,0" VerticalAlignment="Top" Width="155" RenderTransformOrigin="-5.742,3.115" >
+        <ComboBox x:Name="search_sem" HorizontalAlignment="Left" Margin="865,27,0,0" VerticalAlignment="Top" Width="155" RenderTransformOrigin="-5.742,3.115" >
             <ComboBoxItem Content="--Select Semester--" Selector.IsSelected="True"/>
             <ComboBoxItem Content="1"/>
             <ComboBoxItem Content="2"/>
@@ -146,9 +146,10 @@
                 </DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <Button x:Name="search_faculty" Content="Search" HorizontalAlignment="Left" Background="SkyBlue" Margin="777,67,0,0" VerticalAlignment="Top" Width="124"  FontFamily="Times New Roman" FontSize="11" FontWeight="Bold" Click="Search_faculty_Click" />
-        <Button x:Name="btn_search_clear" Content="Clear" HorizontalAlignment="Left" Background="SkyBlue" Margin="916,67,0,0" VerticalAlignment="Top" Width="75"  FontFamily="Times New Roman" FontSize="11" FontWeight="Bold" Click="Btn_search_clear_Click" TabIndex="13" />
+        <Button x:Name="search_faculty" Content="Search" HorizontalAlignment="Left" Background="SkyBlue" Margin="777,64,0,0" VerticalAlignment="Top" Width="124"  FontFamily="Times New Roman" FontSize="11" FontWeight="Bold" Click="Search_faculty_Click" />
+        <Button x:Name="btn_search_clear" Content="Clear" HorizontalAlignment="Left" Background="SkyBlue" Margin="916,64,0,0" VerticalAlignment="Top" Width="75"  FontFamily="Times New Roman" FontSize="11" FontWeight="Bold" Click="Btn_search_clear_Click" TabIndex="13" />
         <Button x:Name="btn_update" Content="Update" IsEnabled="False" HorizontalAlignment="Left" Background="SkyBlue" Margin="251,444,0,0" VerticalAlignment="Top" Width="75"  FontFamily="Times New Roman" FontSize="11" FontWeight="Bold" Click="Btn_update_Click" TabIndex="12" />
         <Button x:Name="btn_del" Content="Delete" IsEnabled="False" HorizontalAlignment="Left" Background="SkyBlue" Margin="153,487,0,0" VerticalAlignment="Top" Width="75"  FontFamily="Times New Roman" FontSize="11" FontWeight="Bold" Click="Btn_del_Click" TabIndex="12" />
+        <Label x:Name="id" Content="" Visibility="Hidden" HorizontalAlignment="Left" Margin="24,468,0,0" VerticalAlignment="Top"  FontFamily="Times New Roman" FontSize="15" FontWeight="Bold"/>
     </Grid>
 </UserControl>

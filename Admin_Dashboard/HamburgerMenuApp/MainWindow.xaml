@@ -95,9 +95,21 @@
                         </controls:HamburgerMenuGlyphItem.Tag>
                     </controls:HamburgerMenuGlyphItem>
                     <controls:HamburgerMenuGlyphItem Glyph="&#xE77B;"
-                                                     Label="Add Assignment">
+                                                     Label="View Assignments">
                         <controls:HamburgerMenuGlyphItem.Tag>
-                            <views:home />
+                            <views:assignments />
+                        </controls:HamburgerMenuGlyphItem.Tag>
+                    </controls:HamburgerMenuGlyphItem>
+                    <controls:HamburgerMenuGlyphItem Glyph="&#xE77B;"
+                                                     Label="Add Event Details">
+                        <controls:HamburgerMenuGlyphItem.Tag>
+                            <views:events />
+                        </controls:HamburgerMenuGlyphItem.Tag>
+                    </controls:HamburgerMenuGlyphItem>
+                    <controls:HamburgerMenuGlyphItem Glyph="&#xE77B;"
+                                                     Label="Add Question Paper">
+                        <controls:HamburgerMenuGlyphItem.Tag>
+                            <views:qpaper />
                         </controls:HamburgerMenuGlyphItem.Tag>
                     </controls:HamburgerMenuGlyphItem>
                     <!--<controls:HamburgerMenuGlyphItem Glyph="&#xE77A;"

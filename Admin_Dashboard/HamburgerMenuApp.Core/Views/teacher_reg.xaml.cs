@@ -37,7 +37,9 @@ namespace HamburgerMenuApp.Core.Views
             get { return ConfigurationManager.AppSettings["Constring"]; }
         }
 
-        MysqlClass _mysql = new MysqlClass(constring);
+        static public string temp { get; set; }
+
+        MysqlClass _mysql = null;
         const string message1 = "\n\nYour account has been registered at Anne's College App. For your convience the below are the credentials to login into the Mobile application.\n";
         const string message2 = "\n\nThank You. Have a nice day !!";
 
@@ -55,7 +57,7 @@ namespace HamburgerMenuApp.Core.Views
                 {
                     return;
                 }
-                if (IsAlreadyRegistered())
+                if (IsAlreadyRegistered(reg_no.Text))
                 {
                     MessageBox.Show("The Faculty record with " + reg_no.Text + " already Exists", "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Warning);
                     return;
@@ -104,6 +106,7 @@ namespace HamburgerMenuApp.Core.Views
             search_std_name.Text = string.Empty;
             btn_del.IsEnabled = false;
             btn_update.IsEnabled = false;
+            btn_add.IsEnabled = true;
         }
 
         public bool validate()
@@ -164,12 +167,17 @@ namespace HamburgerMenuApp.Core.Views
                 {
                     _mysql = new MysqlClass(constring);
                 }
-                string query = "update std_register set name = '" + std_name.Text + "', reg_no = '" + reg_no.Text + "', dept = '" + class_dept.Text + "' , sem = '" + sem.Text + "', ph_no = '" + ph_no.Text + "', email = '" + email.Text + "', address = '" + address.Text + "', gender = '" + gender.Text + "', dob = '" + dob.Text + "' where reg_no = '" + reg_no.Text + "'";
+                string query = "update std_register set name = '" + std_name.Text + "', reg_no = '" + reg_no.Text + "', dept = '" + class_dept.Text + "' , sem = '" + sem.Text + "', ph_no = '" + ph_no.Text + "', email = '" + email.Text + "', address = '" + address.Text + "', gender = '" + gender.Text + "', dob = '" + dob.Text + "' where id = '" + id.Content + "'";
                 MessageBoxResult result = MessageBox.Show("Are you sure?, The Faculty record(" + reg_no.Text + ") will be updated.", "Confirmation", MessageBoxButton.OKCancel, MessageBoxImage.Warning);
                 if (result == MessageBoxResult.OK)
                 {
+                    if (temp != reg_no.Text && IsAlreadyRegistered(reg_no.Text))
+                    {
+                        MessageBox.Show("The Faculty record with " + reg_no.Text + " already Exists", "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Warning);
+                        return;
+                    }
                     _mysql.Execute_query(query);
-                    MessageBox.Show("The Faculty Record has been deleted successfully.", "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show("The Faculty Record has been updated successfully.", "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
                 else
                 {
@@ -191,16 +199,11 @@ namespace HamburgerMenuApp.Core.Views
         {
             try
             {
-                if (string.IsNullOrWhiteSpace(reg_no.Text))
-                {
-                    MessageBox.Show("The Register Number field cannot be empty", "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Warning);
-                    return;
-                }
                 if (_mysql == null)
                 {
                     _mysql = new MysqlClass(constring);
                 }
-                string delquery = "delete from std_register where reg_no = '" + reg_no.Text + "'";
+                string delquery = "delete from std_register where id = '" + id.Content + "'";
                 MessageBoxResult result = MessageBox.Show("Are you sure?, The faculty record(" + reg_no.Text + ") will be deleted.", "Confirmation", MessageBoxButton.OKCancel, MessageBoxImage.Warning);
                 if (result == MessageBoxResult.OK)
                 {
@@ -273,7 +276,7 @@ namespace HamburgerMenuApp.Core.Views
             loadgrid();
         }
 
-        private bool IsAlreadyRegistered()
+        private bool IsAlreadyRegistered(string value)
         {
             try
             {
@@ -281,7 +284,7 @@ namespace HamburgerMenuApp.Core.Views
                 {
                     _mysql = new MysqlClass(constring);
                 }
-                string query = "Select * from std_register where reg_no='" + reg_no.Text + "'";
+                string query = "Select * from std_register where reg_no='" + value + "'";
                 DataSet ds = _mysql.ExecuteQueryReturnDataset(query);
                 if (ds != null && ds.Tables[0].Rows.Count > 0)
                 {
@@ -302,8 +305,10 @@ namespace HamburgerMenuApp.Core.Views
         private void Faculty_grid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             DataRowView dataRow = (DataRowView)faculty_grid.SelectedItem;
+            id.Content = dataRow.Row.ItemArray[0].ToString();
             std_name.Text = dataRow.Row.ItemArray[1].ToString();
             reg_no.Text = dataRow.Row.ItemArray[2].ToString();
+            temp = dataRow.Row.ItemArray[2].ToString();
             var _dept_class = class_dept.Items.OfType<ComboBoxItem>().FirstOrDefault(x => x.Content.ToString() == dataRow.Row.ItemArray[4].ToString());
             int _class_index = class_dept.SelectedIndex = class_dept.Items.IndexOf(_dept_class);
             var _sem = sem.Items.OfType<ComboBoxItem>().FirstOrDefault(x => x.Content.ToString() == dataRow.Row.ItemArray[5].ToString());
