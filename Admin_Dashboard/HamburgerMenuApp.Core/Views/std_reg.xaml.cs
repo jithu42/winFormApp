@@ -72,10 +72,10 @@ namespace HamburgerMenuApp.Core.Views
                     }
                     string delquery = "delete from std_register where reg_no = '" + reg_no.Text + "'";
                     _mysql.Execute_query(delquery);
+                    _mysql.CloseConnection();
+                    _mysql = null;
                     MessageBox.Show("Check your internet connection", "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
-                _mysql.CloseConnection();
-                _mysql = null;
                 loadgrid();
                 clear();
             }
