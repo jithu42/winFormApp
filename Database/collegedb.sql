@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 07, 2020 at 12:56 PM
+-- Generation Time: Mar 08, 2020 at 12:07 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.2.27
 
@@ -69,7 +69,7 @@ CREATE TABLE `events` (
 --
 
 INSERT INTO `events` (`id`, `dept`, `sem`, `event_name`, `_desc`, `organised_by`, `from_date`, `to_date`) VALUES
-(2, 'BCA', '1', 'sadfsadjfkh', 'sadfasdf', 'sadfasdf', '15-03-2020', '27-03-2020'),
+(2, 'BCA', '1', '[sadfsadjfkh]', 'sadfasdf', 'sadfasdf', '15-03-2020', '27-03-2020'),
 (3, 'BBM', '2', 'asdasd', 'asd', 'asdasd', '07-03-2020', '08-03-2020');
 
 -- --------------------------------------------------------
@@ -80,17 +80,27 @@ INSERT INTO `events` (`id`, `dept`, `sem`, `event_name`, `_desc`, `organised_by`
 
 CREATE TABLE `leaves` (
   `id` int(10) NOT NULL,
+  `reg_no` varchar(255) NOT NULL,
   `dept` varchar(50) NOT NULL,
   `sem` varchar(10) NOT NULL,
   `leave_to` varchar(75) NOT NULL,
   `leave_from` varchar(75) NOT NULL,
-  `subject` varchar(250) NOT NULL,
+  `leave_subject` varchar(250) NOT NULL,
   `reason` varchar(1000) NOT NULL,
   `from_date` varchar(50) NOT NULL,
   `to_date` varchar(50) NOT NULL,
-  `status` varchar(10) NOT NULL DEFAULT '0',
+  `leave_status` varchar(10) NOT NULL DEFAULT '0',
   `faculty_message` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `leaves`
+--
+
+INSERT INTO `leaves` (`id`, `reg_no`, `dept`, `sem`, `leave_to`, `leave_from`, `leave_subject`, `reason`, `from_date`, `to_date`, `leave_status`, `faculty_message`) VALUES
+(1, '1001', 'BCA', '4', 'asdkh', 'Bharathi', 'not well', 'fever', '2020-3-11', '2020-3-25', 'pending', ''),
+(2, '1001', 'BCA', '1', 'asa', 'abhilash', 'fdgfddfg', 'dgfdg', '2020-03-08', '2020-3-9', 'pending', ''),
+(3, '1001', 'BCA', '1', 'aab', 'abhilash', 'fdgfddfg', 'dgfdg', '2020-03-08', '2020-3-9', 'Reject', 'dsf');
 
 -- --------------------------------------------------------
 
@@ -160,11 +170,11 @@ CREATE TABLE `std_register` (
 --
 
 INSERT INTO `std_register` (`id`, `name`, `reg_no`, `password`, `dept`, `sem`, `designation`, `ph_no`, `email`, `address`, `gender`, `dob`) VALUES
-(1, 'Bharathi', '1001', 'abc', 'BCA', '4', 'student', '0980912737', 'bharathidhanu231@gmail.com', 'akjdhas jadhjkl ajklsdhaj ', 'Female', '12-12-1997'),
-(2, 'ajkahsdj ajsdhjadh', '1002', '5D1C2CB9', 'BCA', '3', 'student', '98965656565', 'ahdjad@gmail.com', 'hasgdkahgdhagd', 'Male', '12-12-1990'),
-(6, 'asdkh', '2002', 'F9DCD17B', 'BBM', '2', 'faculty', '0981230978', 'ajksdh@gmail.com', 'akshdaksjdh', 'Male', '12-12-1990'),
-(7, 'adfsasffd', '2001', '44EBC7D3', 'BBM', '4', 'faculty', '0981230978', 'ajksdh@gmail.com', 'akshdaksjdh', 'Male', '12-12-1990'),
-(8, 'adasd', '1003', '1C981977', 'BCA', '3', 'student', '0984656545', 'asda@gmail.com', 'adahsg khadkha skhdakd', 'Male', '31-12-1998');
+(1, 'abhilash', '1001', 'abc', 'BCA', '1', 'student', '097128936', 'asdgasd@gmail.com', 'iagdashkdgahgsd', 'Male', '06-03-2020'),
+(2, 'abhilash', '1002', '4E2F4691', 'BCA', '1', 'student', '097128936', 'asdgasd@gmail.com', 'iagdashkdgahgsd', 'Male', '06-03-2020'),
+(3, 'akjsdfhkajdfh', '1003', '02AC1FA2', 'BCA', '3', 'student', '9172368123', 'ajsdhg@gmail.com', 'hghaf', 'Male', '06-03-2020'),
+(4, 'aab', '2002', 'abc', 'BCA', '1', 'faculty', '1293872091', 'ads2@gmail.com', 'ashdgasjkdh', 'Male', '29-02-2020'),
+(5, 'asa', 'L13972', 'FBAB92AF', 'BCA', '1', 'faculty', '124087123', 'adfadf@gmail.com', 'dfasdfsadf', 'Male', '15-02-2020');
 
 --
 -- Indexes for dumped tables
@@ -226,7 +236,7 @@ ALTER TABLE `events`
 -- AUTO_INCREMENT for table `leaves`
 --
 ALTER TABLE `leaves`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `login`
@@ -244,7 +254,7 @@ ALTER TABLE `qpaper`
 -- AUTO_INCREMENT for table `std_register`
 --
 ALTER TABLE `std_register`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
