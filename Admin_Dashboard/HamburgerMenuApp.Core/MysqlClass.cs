@@ -23,6 +23,11 @@ namespace HamburgerMenuApp.Core
 
         public void CloseConnection()
         {
+            if(dr!=null)
+            {
+                dr.Close();
+                dr = null;
+            }
             con.Close();
             con = null;
         }
