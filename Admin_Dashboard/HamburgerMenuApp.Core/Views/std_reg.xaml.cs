@@ -156,9 +156,13 @@ namespace HamburgerMenuApp.Core.Views
                     _mysql = new MysqlClass(constring);
                 }
                 string query = string.Empty;
-                if (search_std_name.Text != string.Empty)
+                if (search_std_name.Text != string.Empty && search_class_dept.SelectedIndex != 0 && search_sem.SelectedIndex != 0)
                 {
-                    query = "Select * from std_register where dept='" + search_class_dept.Text + "' and sem ='" + search_sem.Text + "' and name='" + search_std_name.Text + "' or reg_no ='"+ search_std_name.Text + "' and designation = 'student'";
+                    query = "Select * from std_register where dept='" + search_class_dept.Text + "' and sem ='" + search_sem.Text + "' and name='" + search_std_name.Text + "' or reg_no ='" + search_std_name.Text + "' and designation = 'student'";
+                }
+                else if (search_std_name.Text != string.Empty && search_class_dept.SelectedIndex == 0 && search_sem.SelectedIndex == 0)
+                {
+                    query = "Select * from std_register where name='" + search_std_name.Text + "' and designation = 'student'";
                 }
                 else
                 {
