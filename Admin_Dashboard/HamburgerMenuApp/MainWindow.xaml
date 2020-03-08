@@ -94,19 +94,25 @@
                             <views:teacher_reg/>
                         </controls:HamburgerMenuGlyphItem.Tag>
                     </controls:HamburgerMenuGlyphItem>
-                    <controls:HamburgerMenuGlyphItem Glyph="&#xE77B;"
+                    <controls:HamburgerMenuGlyphItem Glyph="&#xE77F;"
                                                      Label="View Assignments">
                         <controls:HamburgerMenuGlyphItem.Tag>
                             <views:assignments />
                         </controls:HamburgerMenuGlyphItem.Tag>
                     </controls:HamburgerMenuGlyphItem>
-                    <controls:HamburgerMenuGlyphItem Glyph="&#xE77B;"
+                    <controls:HamburgerMenuGlyphItem Glyph="&#xE8D1;"
+                                                     Label="View Leaves">
+                        <controls:HamburgerMenuGlyphItem.Tag>
+                            <views:leaves />
+                        </controls:HamburgerMenuGlyphItem.Tag>
+                    </controls:HamburgerMenuGlyphItem>
+                    <controls:HamburgerMenuGlyphItem Glyph="&#xE787;"
                                                      Label="Add Event Details">
                         <controls:HamburgerMenuGlyphItem.Tag>
                             <views:events />
                         </controls:HamburgerMenuGlyphItem.Tag>
                     </controls:HamburgerMenuGlyphItem>
-                    <controls:HamburgerMenuGlyphItem Glyph="&#xE77B;"
+                    <controls:HamburgerMenuGlyphItem Glyph="&#xE7C3;"
                                                      Label="Add Question Paper">
                         <controls:HamburgerMenuGlyphItem.Tag>
                             <views:qpaper />

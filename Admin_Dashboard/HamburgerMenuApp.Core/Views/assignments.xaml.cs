@@ -37,6 +37,7 @@ namespace HamburgerMenuApp.Core.Views
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
             loadgrid();
+            clear();
         }
 
         private void Search_assignment_Click(object sender, RoutedEventArgs e)
@@ -79,6 +80,11 @@ namespace HamburgerMenuApp.Core.Views
         }
 
         private void Btn_search_clear_Click(object sender, RoutedEventArgs e)
+        {
+            clear();
+        }
+
+        void clear()
         {
             loadgrid();
             from_date.Text = string.Empty;
