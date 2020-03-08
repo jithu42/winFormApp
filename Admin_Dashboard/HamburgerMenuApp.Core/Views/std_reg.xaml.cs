@@ -57,6 +57,8 @@ namespace HamburgerMenuApp.Core.Views
                 }
                 string query = "insert into std_register(name,reg_no,password,dept,sem,designation,ph_no,email,address,gender,dob) values ('" + std_name.Text + "','" + reg_no.Text + "','" + pass + "','" + class_dept.Text + "','" + sem.Text + "','student','" + ph_no.Text + "','" + email.Text + "','" + address.Text + "','" + gender.Text + "','" + dob.Text + "')";
                 _mysql.Execute_query(query);
+                _mysql.CloseConnection();
+                _mysql = null;
                 bool status = emailClass.SendEmail(email.Text, Username_emailId, "Application - Registration", "Dear " + std_name.Text + "," + message1 + "Username: " + reg_no.Text + " Password: " + pass + message2);
                 if (status)
                 {
@@ -64,6 +66,10 @@ namespace HamburgerMenuApp.Core.Views
                 }
                 else
                 {
+                    if (_mysql == null)
+                    {
+                        _mysql = new MysqlClass(constring);
+                    }
                     string delquery = "delete from std_register where reg_no = '" + reg_no.Text + "'";
                     _mysql.Execute_query(delquery);
                     MessageBox.Show("Check your internet connection", "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Error);
