@@ -82,6 +82,13 @@
                     </controls:HamburgerMenuGlyphItem>
 
                     <controls:HamburgerMenuGlyphItem Glyph="&#xE8B8;"
+                                                     Label="Admin Details">
+                        <controls:HamburgerMenuGlyphItem.Tag>
+                            <views:admin_reg />
+                        </controls:HamburgerMenuGlyphItem.Tag>
+                    </controls:HamburgerMenuGlyphItem>
+                    
+                    <controls:HamburgerMenuGlyphItem Glyph="&#xE8B8;"
                                                      Label="Student Details">
                         <controls:HamburgerMenuGlyphItem.Tag>
                             <views:std_reg />

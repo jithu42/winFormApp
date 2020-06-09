@@ -1,0 +1,97 @@
+﻿<UserControl x:Class="HamburgerMenuApp.Core.Views.admin_reg"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HamburgerMenuApp.Core.Views"
+             mc:Ignorable="d" 
+              d:DesignHeight="768" d:DesignWidth="1280" Background="LightBlue" Loaded="UserControl_Loaded">
+    <Grid>
+        <Border BorderBrush="SkyBlue" BorderThickness="2" HorizontalAlignment="Left" Height="336" Margin="10,13,0,0" VerticalAlignment="Top" Width="450"/>
+        <Label x:Name="label2" Content="Admin Name" HorizontalAlignment="Left" Margin="18,26,0,0" VerticalAlignment="Top"  FontFamily="Times New Roman" FontSize="15" FontWeight="Bold" />
+        <TextBox x:Name="std_name" HorizontalAlignment="Left" Height="23" Margin="153,27,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="272" TabIndex="3"/>
+        <Label x:Name="label4" Content="Username" HorizontalAlignment="Left" Margin="18,64,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="15" FontWeight="Bold"/>
+        <TextBox x:Name="reg_no" HorizontalAlignment="Left" Height="23" Margin="153,64,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="272" TabIndex="4"/>
+        <Button x:Name="btn_add" Content="Add" HorizontalAlignment="Left" Background="SkyBlue" Margin="153,223,0,0" VerticalAlignment="Top" Width="75"  FontFamily="Times New Roman" FontSize="11" FontWeight="Bold" Click="Btn_add_Click" TabIndex="12" />
+        <TextBox x:Name="cal" HorizontalAlignment="Left" Height="23" Margin="374,478,0,0" TextWrapping="Wrap" Text="" Visibility="Hidden" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="vh_type" HorizontalAlignment="Left" Height="23" Margin="391,549,0,0" Visibility="Hidden" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="exp" HorizontalAlignment="Left" Height="23" Margin="251,619,0,0" Visibility="Hidden" MaxLength="10" Text="" VerticalAlignment="Top" Width="174"/>
+        <TextBox x:Name="zz" HorizontalAlignment="Left" Height="23" Margin="564,663,0,0" Visibility="Hidden" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="hh" HorizontalAlignment="Left" Height="23" Margin="251,674,0,0" Visibility="Hidden" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="174"/>
+        <Label x:Name="label2_Copy1" Content="Phone No." HorizontalAlignment="Left" Margin="18,104,0,0" VerticalAlignment="Top"  FontFamily="Times New Roman" FontSize="15" FontWeight="Bold" />
+        <TextBox x:Name="ph_no" HorizontalAlignment="Left" Height="23" Margin="153,105,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="272" TabIndex="7"/>
+        <Label x:Name="label4_Copy1" Content="Email ID" HorizontalAlignment="Left" Margin="18,142,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="15" FontWeight="Bold"/>
+        <TextBox x:Name="email" HorizontalAlignment="Left" Height="23" Margin="153,142,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="272" TabIndex="8"/>
+        <Label x:Name="label4_Copy2" Content="Gender" HorizontalAlignment="Left" Margin="18,181,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="15" FontWeight="Bold"/>
+        <ComboBox x:Name="gender" HorizontalAlignment="Left" Margin="153,182,0,0" VerticalAlignment="Top" Width="155" RenderTransformOrigin="-5.742,3.115" TabIndex="10">
+            <ComboBoxItem Content="--Select Gender--" Selector.IsSelected="True"></ComboBoxItem>
+            <ComboBoxItem Content="Male"></ComboBoxItem>
+            <ComboBoxItem Content="Female"></ComboBoxItem>
+        </ComboBox>
+        <Button x:Name="btn_clear" Content="Clear" HorizontalAlignment="Left" Background="SkyBlue" Margin="252,266,0,0" VerticalAlignment="Top" Width="75"  FontFamily="Times New Roman" FontSize="11" FontWeight="Bold" Click="Btn_clear_Click" TabIndex="13" />
+
+
+        <Border BorderBrush="SkyBlue" BorderThickness="2" HorizontalAlignment="Left" Height="336" Margin="465,13,0,0" VerticalAlignment="Top" Width="755"/>
+        <Label x:Name="label2_Copy3" Content="Search Student" HorizontalAlignment="Left" Margin="494,25,0,0" VerticalAlignment="Top"  FontFamily="Times New Roman" FontSize="15" FontWeight="Bold" />
+        <TextBox x:Name="search_std_name" HorizontalAlignment="Left" Height="23" Margin="607,25,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="155"/>
+        <DataGrid x:Name="student_grid" HorizontalAlignment="Left" AutoGenerateColumns="False" MouseDoubleClick="Student_grid_MouseDoubleClick"  Height="Auto" Margin="494,73,0,0" VerticalAlignment="Top" IsReadOnly="True" Width="497">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="id" Visibility="Hidden" Binding="{Binding id}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style>
+                            <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
+                            <Setter Property="TextBlock.TextAlignment" Value="Center"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Admin Name" Binding="{Binding admin_name}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style>
+                            <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
+                            <Setter Property="TextBlock.TextAlignment" Value="Center"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Username" Binding="{Binding username}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style>
+                            <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
+                            <Setter Property="TextBlock.TextAlignment" Value="Center"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Gender" Binding="{Binding gender}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style>
+                            <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
+                            <Setter Property="TextBlock.TextAlignment" Value="Center"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Phone No." Binding="{Binding ph_no}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style>
+                            <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
+                            <Setter Property="TextBlock.TextAlignment" Value="Center"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Email ID" Binding="{Binding email}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style>
+                            <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
+                            <Setter Property="TextBlock.TextAlignment" Value="Center"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button x:Name="search_std" Content="Search" HorizontalAlignment="Left" Background="SkyBlue" Margin="777,25,0,0" VerticalAlignment="Top" Width="124"  FontFamily="Times New Roman" FontSize="11" FontWeight="Bold" Click="Search_std_Click" />
+        <Button x:Name="btn_search_clear" Content="Clear" HorizontalAlignment="Left" Background="SkyBlue" Margin="916,25,0,0" VerticalAlignment="Top" Width="75"  FontFamily="Times New Roman" FontSize="11" FontWeight="Bold" Click="Btn_search_clear_Click" TabIndex="13" />
+        <Button x:Name="btn_update" Content="Update" IsEnabled="False" HorizontalAlignment="Left" Background="SkyBlue" Margin="251,223,0,0" VerticalAlignment="Top" Width="75"  FontFamily="Times New Roman" FontSize="11" FontWeight="Bold" Click="Btn_update_Click" TabIndex="12" />
+        <Button x:Name="btn_del" Content="Delete" IsEnabled="False" HorizontalAlignment="Left" Background="SkyBlue" Margin="153,266,0,0" VerticalAlignment="Top" Width="75"  FontFamily="Times New Roman" FontSize="11" FontWeight="Bold" Click="Btn_del_Click" TabIndex="12" />
+        <Label x:Name="id" Content="" Visibility="Hidden" HorizontalAlignment="Left" Margin="25,477,0,0" VerticalAlignment="Top"  FontFamily="Times New Roman" FontSize="15" FontWeight="Bold"/>
+
+    </Grid>
+</UserControl>

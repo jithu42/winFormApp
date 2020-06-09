@@ -76,6 +76,10 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="SelectedItemToContentConverter.cs" />
+    <Compile Include="ValidationFile.cs" />
+    <Compile Include="Views\admin_reg.xaml.cs">
+      <DependentUpon>admin_reg.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\assignments.xaml.cs">
       <DependentUpon>assignments.xaml</DependentUpon>
     </Compile>
@@ -109,6 +113,10 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Views\admin_reg.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\assignments.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

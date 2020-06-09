@@ -19,7 +19,7 @@ namespace HamburgerMenuApp.Core.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -57,6 +57,186 @@ namespace HamburgerMenuApp.Core.Properties {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter the valid address.
+        /// </summary>
+        internal static string validaddress {
+            get {
+                return ResourceManager.GetString("validaddress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please select the valid department.
+        /// </summary>
+        internal static string validdept {
+            get {
+                return ResourceManager.GetString("validdept", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter the valid description.
+        /// </summary>
+        internal static string validdesc {
+            get {
+                return ResourceManager.GetString("validdesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please select the valid date of birth.
+        /// </summary>
+        internal static string validdob {
+            get {
+                return ResourceManager.GetString("validdob", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter the valid Email-ID.
+        /// </summary>
+        internal static string validemail {
+            get {
+                return ResourceManager.GetString("validemail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter the valid faculty ID.
+        /// </summary>
+        internal static string validfacultyid {
+            get {
+                return ResourceManager.GetString("validfacultyid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter the valid faculty name.
+        /// </summary>
+        internal static string validfacultyname {
+            get {
+                return ResourceManager.GetString("validfacultyname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please select the from date.
+        /// </summary>
+        internal static string validfromdate {
+            get {
+                return ResourceManager.GetString("validfromdate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please select the gender.
+        /// </summary>
+        internal static string validgender {
+            get {
+                return ResourceManager.GetString("validgender", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter the valid name.
+        /// </summary>
+        internal static string validname {
+            get {
+                return ResourceManager.GetString("validname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter the valid organised details.
+        /// </summary>
+        internal static string validorg {
+            get {
+                return ResourceManager.GetString("validorg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter the valid Phone no..
+        /// </summary>
+        internal static string validphoneno {
+            get {
+                return ResourceManager.GetString("validphoneno", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter the valid title.
+        /// </summary>
+        internal static string validqtitle {
+            get {
+                return ResourceManager.GetString("validqtitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter the valid registration number.
+        /// </summary>
+        internal static string validregno {
+            get {
+                return ResourceManager.GetString("validregno", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please select the valid semester.
+        /// </summary>
+        internal static string validsem {
+            get {
+                return ResourceManager.GetString("validsem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter the valid student name.
+        /// </summary>
+        internal static string validstdname {
+            get {
+                return ResourceManager.GetString("validstdname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter the valid event name.
+        /// </summary>
+        internal static string validtitle {
+            get {
+                return ResourceManager.GetString("validtitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please select the to date.
+        /// </summary>
+        internal static string validtodate {
+            get {
+                return ResourceManager.GetString("validtodate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter valid URL address.
+        /// </summary>
+        internal static string validurladd {
+            get {
+                return ResourceManager.GetString("validurladd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter the valid username.
+        /// </summary>
+        internal static string validusername {
+            get {
+                return ResourceManager.GetString("validusername", resourceCulture);
             }
         }
     }

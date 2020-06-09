@@ -1,5 +1,9 @@
-﻿using System;
+﻿using HamburgerMenuApp.Core;
+using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,27 +15,33 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using MahApps.Metro.Controls;
-using MySql.Data.MySqlClient;
-using System.Data;
-using System.Configuration;
 
 namespace HamburgerMenuApp
 {
     /// <summary>
-    /// Interaction logic for Login.xaml
+    /// Interaction logic for LoginForm.xaml
     /// </summary>
-    public partial class Login : MetroWindow
+    public partial class LoginForm : Window
     {
-        public Login()
+        public LoginForm()
         {
             InitializeComponent();
         }
+
         string constring = ConfigurationManager.AppSettings["Constring"];
-        private void btnlogin_Click(object sender, RoutedEventArgs e)
+        private void Btn_exit_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Btnlogin_Click(object sender, RoutedEventArgs e)
         {
             try
             {
+                if (!validate())
+                {
+                    return;
+                }
                 string user = txtusername.Text;
                 string password = txtpassword.Password;
                 MySqlConnection con = new MySqlConnection(constring);
@@ -54,24 +64,41 @@ namespace HamburgerMenuApp
                 }
                 else
                 {
-                    MessageBox.Show("Sorry! Please enter existing emailid/password.", "Invalid User Login", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show("Sorry! Please enter existing email-id/password.", "Login Information", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
                 con.Close();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
 
-        private void btncancel_Click(object sender, RoutedEventArgs e)
+        private void Forgotpass_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            this.Close();
+            ForgotPassword mw = new ForgotPassword();
+            mw.Show();
+            Close();
         }
 
-        private void MetroWindow_Loaded(object sender, RoutedEventArgs e)
+        private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             Keyboard.Focus(txtusername);
+        }
+
+        private bool validate()
+        {
+            if (string.IsNullOrWhiteSpace(txtusername.Text) || (!ValidationFile.IsAlphaNumeric(txtusername.Text)))
+            {
+                MessageBox.Show("Please enter the valid username", "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Information);
+                return false;
+            }
+            else if (string.IsNullOrWhiteSpace(txtpassword.Password))
+            {
+                MessageBox.Show("Please enter the password", "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Information);
+                return false;
+            }
+            return true;
         }
     }
 }

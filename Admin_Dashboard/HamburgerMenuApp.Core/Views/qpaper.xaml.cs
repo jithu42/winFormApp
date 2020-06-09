@@ -89,7 +89,7 @@ namespace HamburgerMenuApp.Core.Views
                 {
                     _mysql = new MysqlClass(constring);
                 }
-                string query = "update qpaper set name = '" + title.Text + "', _desc = '" + _desc.Text + "', dept = '" + class_dept.Text + "' , sem = '" + sem.Text + "', url = '" + url_add.Text + "' where id = '" + id.Content + "'";
+                string query = "update qpaper set title = '" + title.Text + "', _desc = '" + _desc.Text + "', dept = '" + class_dept.Text + "' , sem = '" + sem.Text + "', url = '" + url_add.Text + "' where id = '" + id.Content + "'";
                 MessageBoxResult result = MessageBox.Show("Are you sure?, The Question paper record will be updated.", "Confirmation", MessageBoxButton.OKCancel, MessageBoxImage.Warning);
                 if (result == MessageBoxResult.OK)
                 {
@@ -184,14 +184,34 @@ namespace HamburgerMenuApp.Core.Views
 
         public bool validate()
         {
-            if (string.IsNullOrWhiteSpace(title.Text))
+            if (string.IsNullOrWhiteSpace(title.Text) || (!ValidationFile.IsAlphaNumeric(title.Text)))
             {
-                MessageBox.Show("Enter the Title");
+                MessageBox.Show(Properties.Resources.validqtitle, "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Stop);
+                Keyboard.Focus(title);
                 return false;
             }
-            else if (string.IsNullOrWhiteSpace(_desc.Text))
+            else if (string.IsNullOrWhiteSpace(_desc.Text) || (!ValidationFile.IsAlphaNumeric(_desc.Text)))
             {
-                MessageBox.Show("Enter the Description");
+                MessageBox.Show(Properties.Resources.validdesc, "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Stop);
+                Keyboard.Focus(_desc);
+                return false;
+            }
+            else if (class_dept.SelectedIndex == 0)
+            {
+                MessageBox.Show(Properties.Resources.validdept, "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Stop);
+                Keyboard.Focus(class_dept);
+                return false;
+            }
+            else if (sem.SelectedIndex == 0)
+            {
+                MessageBox.Show(Properties.Resources.validsem, "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Stop);
+                Keyboard.Focus(sem);
+                return false;
+            }
+            else if (string.IsNullOrWhiteSpace(url_add.Text) || (!ValidationFile.IsAlphaNumeric(url_add.Text)))
+            {
+                MessageBox.Show(Properties.Resources.validurladd, "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Stop);
+                Keyboard.Focus(url_add);
                 return false;
             }
             return true;

@@ -283,6 +283,7 @@ C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\HamburgerMen
 C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\Views\teacher_reg.g.cs
 D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\bin\Debug\HamburgerMenuApp.Core.dll
 D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\bin\Debug\HamburgerMenuApp.Core.pdb
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\Views\admin_reg.g.cs
 D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\Views\assignments.g.cs
 D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\Views\events.g.cs
 D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\Views\home.g.cs
@@ -292,6 +293,7 @@ D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debu
 D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\Views\teacher_reg.g.cs
 D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core_MarkupCompile.cache
 D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core_MarkupCompile.lref
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\Views\admin_reg.baml
 D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\Views\assignments.baml
 D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\Views\events.baml
 D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\Views\home.baml
@@ -307,4 +309,3 @@ D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debu
 D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.csproj.CopyComplete
 D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.dll
 D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.pdb
-D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.csprojAssemblyReference.cache
