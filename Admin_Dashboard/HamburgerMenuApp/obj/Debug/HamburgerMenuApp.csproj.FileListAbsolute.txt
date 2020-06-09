@@ -371,13 +371,15 @@ D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp\bin\Debug\Mah
 D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp\bin\Debug\MahApps.Metro.IconPacks.xml
 D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp\obj\Debug\HamburgerMenuApp.csprojAssemblyReference.cache
 D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp\obj\Debug\App.baml
-D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp\obj\Debug\Login.g.cs
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp\obj\Debug\ForgotPassword.g.cs
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp\obj\Debug\LoginForm.g.cs
 D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp\obj\Debug\MainWindow.g.cs
 D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp\obj\Debug\splash.g.cs
 D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp\obj\Debug\App.g.cs
 D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp\obj\Debug\HamburgerMenuApp_MarkupCompile.cache
 D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp\obj\Debug\HamburgerMenuApp_MarkupCompile.lref
-D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp\obj\Debug\Login.baml
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp\obj\Debug\ForgotPassword.baml
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp\obj\Debug\LoginForm.baml
 D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp\obj\Debug\MainWindow.baml
 D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp\obj\Debug\splash.baml
 D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp\obj\Debug\HamburgerMenuApp.g.resources

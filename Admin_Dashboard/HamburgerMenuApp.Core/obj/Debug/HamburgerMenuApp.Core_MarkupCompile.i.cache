@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 
-7-1842897675
+8-1217162335
 
-171283997174
+19128904264
 241526069107
-Views\assignments.xaml;Views\events.xaml;Views\home.xaml;Views\leaves.xaml;Views\qpaper.xaml;Views\std_reg.xaml;Views\teacher_reg.xaml;
+Views\admin_reg.xaml;Views\assignments.xaml;Views\events.xaml;Views\home.xaml;Views\leaves.xaml;Views\qpaper.xaml;Views\std_reg.xaml;Views\teacher_reg.xaml;
 
-True
+False
 

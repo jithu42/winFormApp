@@ -193,14 +193,46 @@ namespace HamburgerMenuApp.Core.Views
 
         public bool validate()
         {
-            if (string.IsNullOrWhiteSpace(title.Text))
+            if (string.IsNullOrWhiteSpace(title.Text) || (!ValidationFile.IsAlphaNumeric(title.Text)))
             {
-                MessageBox.Show("Enter the Title");
+                MessageBox.Show(Properties.Resources.validtitle, "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Stop);
+                Keyboard.Focus(title);
                 return false;
             }
-            else if (string.IsNullOrWhiteSpace(_desc.Text))
+            else if (string.IsNullOrWhiteSpace(_desc.Text) || (!ValidationFile.IsAlphaNumeric(_desc.Text)))
             {
-                MessageBox.Show("Enter the Description");
+                MessageBox.Show(Properties.Resources.validdesc, "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Stop);
+                Keyboard.Focus(_desc);
+                return false;
+            }
+            else if (class_dept.SelectedIndex == 0)
+            {
+                MessageBox.Show(Properties.Resources.validdept, "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Stop);
+                Keyboard.Focus(class_dept);
+                return false;
+            }
+            else if (sem.SelectedIndex == 0)
+            {
+                MessageBox.Show(Properties.Resources.validsem, "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Stop);
+                Keyboard.Focus(sem);
+                return false;
+            }
+            else if (string.IsNullOrWhiteSpace(org.Text) || (!ValidationFile.IsAlphaNumeric(org.Text)))
+            {
+                MessageBox.Show(Properties.Resources.validorg, "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Stop);
+                Keyboard.Focus(org);
+                return false;
+            }
+            else if (string.IsNullOrWhiteSpace(from_date.Text))
+            {
+                MessageBox.Show(Properties.Resources.validfromdate, "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Stop);
+                Keyboard.Focus(from_date);
+                return false;
+            }
+            else if (string.IsNullOrWhiteSpace(to_date.Text))
+            {
+                MessageBox.Show(Properties.Resources.validtodate, "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Stop);
+                Keyboard.Focus(to_date);
                 return false;
             }
             return true;

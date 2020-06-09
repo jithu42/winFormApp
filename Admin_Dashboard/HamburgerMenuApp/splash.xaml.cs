@@ -50,7 +50,7 @@ namespace HamburgerMenuApp
             label.Content = "Loading Please Wait...." + pbStatus.Value + "%";
             if (pbStatus.Value == 99)
             {
-                Login r = new Login();
+                LoginForm r = new LoginForm();
                 r.Show();
                 this.Close();
             }

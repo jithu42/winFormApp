@@ -9,6 +9,7 @@ using MySql.Data.MySqlClient;
 using System.Configuration;
 using System.Data;
 using System.Text.RegularExpressions;
+using System.Windows.Input;
 
 namespace HamburgerMenuApp.Core.Views
 {
@@ -234,14 +235,58 @@ namespace HamburgerMenuApp.Core.Views
 
         public bool validate()
         {
-            if(string.IsNullOrWhiteSpace(std_name.Text))
+            if (string.IsNullOrWhiteSpace(std_name.Text) || (!ValidationFile.IsAlpha(std_name.Text)))
             {
-                MessageBox.Show("Enter the Student Name");
+                MessageBox.Show(Properties.Resources.validstdname, "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Stop);
+                Keyboard.Focus(std_name);
                 return false;
             }
-            else if(string.IsNullOrWhiteSpace(reg_no.Text))
+            else if (string.IsNullOrWhiteSpace(reg_no.Text) || (!ValidationFile.IsAlphaNumeric(reg_no.Text)))
             {
-                MessageBox.Show("Enter the Register Number");
+                MessageBox.Show(Properties.Resources.validregno, "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Stop);
+                Keyboard.Focus(reg_no);
+                return false;
+            }
+            else if (class_dept.SelectedIndex == 0)
+            {
+                MessageBox.Show(Properties.Resources.validdept, "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Stop);
+                Keyboard.Focus(class_dept);
+                return false;
+            }
+            else if (sem.SelectedIndex == 0)
+            {
+                MessageBox.Show(Properties.Resources.validsem, "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Stop);
+                Keyboard.Focus(sem);
+                return false;
+            }
+            else if (string.IsNullOrWhiteSpace(ph_no.Text) || (!ValidationFile.IsNumeric(ph_no.Text)))
+            {
+                MessageBox.Show(Properties.Resources.validphoneno, "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Stop);
+                Keyboard.Focus(ph_no);
+                return false;
+            }
+            else if (string.IsNullOrWhiteSpace(email.Text) || (!ValidationFile.IsValidEmail(email.Text)))
+            {
+                MessageBox.Show(Properties.Resources.validemail, "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Stop);
+                Keyboard.Focus(email);
+                return false;
+            }
+            else if (string.IsNullOrWhiteSpace(address.Text) || (!ValidationFile.IsAlphaNumeric(address.Text)))
+            {
+                MessageBox.Show(Properties.Resources.validaddress, "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Stop);
+                Keyboard.Focus(address);
+                return false;
+            }
+            else if (gender.SelectedIndex == 0)
+            {
+                MessageBox.Show(Properties.Resources.validgender, "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Stop);
+                Keyboard.Focus(gender);
+                return false;
+            }
+            else if (string.IsNullOrWhiteSpace(dob.Text))
+            {
+                MessageBox.Show(Properties.Resources.validdob, "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Stop);
+                Keyboard.Focus(dob);
                 return false;
             }
             return true;
@@ -260,7 +305,7 @@ namespace HamburgerMenuApp.Core.Views
                     _mysql = new MysqlClass(constring);
                 }
                 string query = "update std_register set name = '" + std_name.Text + "', reg_no = '" + reg_no.Text + "', dept = '" + class_dept.Text + "' , sem = '" + sem.Text + "', ph_no = '" + ph_no.Text + "', email = '" + email.Text + "', address = '" + address.Text + "', gender = '" + gender.Text + "', dob = '" + dob.Text + "' where id = '"+id.Content+"'";
-                MessageBoxResult result = MessageBox.Show("Are you sure?, The student record(" + reg_no.Text + ") will be updated.", "Confirmation", MessageBoxButton.OKCancel, MessageBoxImage.Warning);
+                MessageBoxResult result = MessageBox.Show("Are you sure? The student record(" + reg_no.Text + ") will be updated.", "Confirmation", MessageBoxButton.OKCancel, MessageBoxImage.Warning);
                 if (result == MessageBoxResult.OK)
                 {
                     if (temp != reg_no.Text && IsAlreadyRegistered(reg_no.Text))
@@ -296,7 +341,7 @@ namespace HamburgerMenuApp.Core.Views
                     _mysql = new MysqlClass(constring);
                 }
                 string delquery = "delete from std_register where id = '" + id.Content + "'";
-                MessageBoxResult result = MessageBox.Show("Are you sure?, The student record("+ reg_no.Text +") will be deleted.","Confirmation", MessageBoxButton.OKCancel, MessageBoxImage.Warning);
+                MessageBoxResult result = MessageBox.Show("Are you sure? The student record("+ reg_no.Text +") will be deleted.","Confirmation", MessageBoxButton.OKCancel, MessageBoxImage.Warning);
                 if (result == MessageBoxResult.OK)
                 {
                     _mysql.Execute_query(delquery);
