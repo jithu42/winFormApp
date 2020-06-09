@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 08, 2020 at 12:07 PM
+-- Generation Time: Jun 09, 2020 at 11:59 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.2.27
 
@@ -39,14 +39,6 @@ CREATE TABLE `assignments` (
   `assigned_by` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `assignments`
---
-
-INSERT INTO `assignments` (`id`, `dept`, `sem`, `name`, `_desc`, `start_date`, `end_date`, `assigned_by`) VALUES
-(1, 'BCA', '1', 'asdasd a', 'adasdasdasd asd asda sdasda', '12-12-2009', '12-12-2009', 'asdasj das'),
-(2, 'BCA', '6', 'adsadsad', 'adfdasfsafsadfsadf', '12-12-2020', '12-12-2021', 'asdasdasdasd');
-
 -- --------------------------------------------------------
 
 --
@@ -63,14 +55,6 @@ CREATE TABLE `events` (
   `from_date` varchar(50) NOT NULL,
   `to_date` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `events`
---
-
-INSERT INTO `events` (`id`, `dept`, `sem`, `event_name`, `_desc`, `organised_by`, `from_date`, `to_date`) VALUES
-(2, 'BCA', '1', '[sadfsadjfkh]', 'sadfasdf', 'sadfasdf', '15-03-2020', '27-03-2020'),
-(3, 'BBM', '2', 'asdasd', 'asd', 'asdasd', '07-03-2020', '08-03-2020');
 
 -- --------------------------------------------------------
 
@@ -93,15 +77,6 @@ CREATE TABLE `leaves` (
   `faculty_message` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `leaves`
---
-
-INSERT INTO `leaves` (`id`, `reg_no`, `dept`, `sem`, `leave_to`, `leave_from`, `leave_subject`, `reason`, `from_date`, `to_date`, `leave_status`, `faculty_message`) VALUES
-(1, '1001', 'BCA', '4', 'asdkh', 'Bharathi', 'not well', 'fever', '2020-3-11', '2020-3-25', 'pending', ''),
-(2, '1001', 'BCA', '1', 'asa', 'abhilash', 'fdgfddfg', 'dgfdg', '2020-03-08', '2020-3-9', 'pending', ''),
-(3, '1001', 'BCA', '1', 'aab', 'abhilash', 'fdgfddfg', 'dgfdg', '2020-03-08', '2020-3-9', 'Reject', 'dsf');
-
 -- --------------------------------------------------------
 
 --
@@ -110,17 +85,21 @@ INSERT INTO `leaves` (`id`, `reg_no`, `dept`, `sem`, `leave_to`, `leave_from`, `
 
 CREATE TABLE `login` (
   `id` int(10) NOT NULL,
+  `admin_name` varchar(255) NOT NULL,
   `username` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
-  `email` varchar(255) NOT NULL
+  `email` varchar(255) NOT NULL,
+  `ph_no` varchar(100) NOT NULL,
+  `gender` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `login`
 --
 
-INSERT INTO `login` (`id`, `username`, `password`, `email`) VALUES
-(1, 'admin', 'admin123', 'admin@gmail.com');
+INSERT INTO `login` (`id`, `admin_name`, `username`, `password`, `email`, `ph_no`, `gender`) VALUES
+(1, 'asdasd', 'admin', 'admin123', 'admin@gmail.com', '99865846565', 'Male'),
+(4, 'abhilash', 'abhi', 'B8F73F35', 'abhi.rogue@gmail.com', '9986506221', 'Male');
 
 -- --------------------------------------------------------
 
@@ -136,13 +115,6 @@ CREATE TABLE `qpaper` (
   `sem` varchar(10) NOT NULL,
   `url` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `qpaper`
---
-
-INSERT INTO `qpaper` (`id`, `title`, `_desc`, `dept`, `sem`, `url`) VALUES
-(2, 'sajdh', 'asdasdasd', 'BCA', '4', 'http://localhost/phpmyadmin/tbl_structure.php?db=collegedb&table=qpaper');
 
 -- --------------------------------------------------------
 
@@ -162,19 +134,26 @@ CREATE TABLE `std_register` (
   `email` varchar(255) NOT NULL,
   `address` varchar(755) NOT NULL,
   `gender` varchar(255) NOT NULL,
-  `dob` varchar(255) NOT NULL
+  `dob` varchar(255) NOT NULL,
+  `tokenid` varchar(250) NOT NULL,
+  `otp` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- --------------------------------------------------------
+
 --
--- Dumping data for table `std_register`
+-- Table structure for table `timetable`
 --
 
-INSERT INTO `std_register` (`id`, `name`, `reg_no`, `password`, `dept`, `sem`, `designation`, `ph_no`, `email`, `address`, `gender`, `dob`) VALUES
-(1, 'abhilash', '1001', 'abc', 'BCA', '1', 'student', '097128936', 'asdgasd@gmail.com', 'iagdashkdgahgsd', 'Male', '06-03-2020'),
-(2, 'abhilash', '1002', '4E2F4691', 'BCA', '1', 'student', '097128936', 'asdgasd@gmail.com', 'iagdashkdgahgsd', 'Male', '06-03-2020'),
-(3, 'akjsdfhkajdfh', '1003', '02AC1FA2', 'BCA', '3', 'student', '9172368123', 'ajsdhg@gmail.com', 'hghaf', 'Male', '06-03-2020'),
-(4, 'aab', '2002', 'abc', 'BCA', '1', 'faculty', '1293872091', 'ads2@gmail.com', 'ashdgasjkdh', 'Male', '29-02-2020'),
-(5, 'asa', 'L13972', 'FBAB92AF', 'BCA', '1', 'faculty', '124087123', 'adfadf@gmail.com', 'dfasdfsadf', 'Male', '15-02-2020');
+CREATE TABLE `timetable` (
+  `id` int(10) NOT NULL,
+  `day` varchar(15) NOT NULL,
+  `time` varchar(10) NOT NULL,
+  `course` varchar(50) NOT NULL,
+  `sem` varchar(5) NOT NULL,
+  `subject` varchar(50) NOT NULL,
+  `staffid` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Indexes for dumped tables
@@ -217,6 +196,12 @@ ALTER TABLE `std_register`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `timetable`
+--
+ALTER TABLE `timetable`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -224,37 +209,43 @@ ALTER TABLE `std_register`
 -- AUTO_INCREMENT for table `assignments`
 --
 ALTER TABLE `assignments`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `events`
 --
 ALTER TABLE `events`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `leaves`
 --
 ALTER TABLE `leaves`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `login`
 --
 ALTER TABLE `login`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `qpaper`
 --
 ALTER TABLE `qpaper`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `std_register`
 --
 ALTER TABLE `std_register`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `timetable`
+--
+ALTER TABLE `timetable`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
