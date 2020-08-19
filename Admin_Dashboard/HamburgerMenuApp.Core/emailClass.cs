@@ -39,7 +39,7 @@ namespace HamburgerMenuApp.Core
                 msg.To.Add(to);
                 client.Send(msg);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 return false;
             }

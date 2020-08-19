@@ -184,13 +184,13 @@ namespace HamburgerMenuApp.Core.Views
 
         public bool validate()
         {
-            if (string.IsNullOrWhiteSpace(title.Text) || (!ValidationFile.IsAlphaNumeric(title.Text)))
+            if (string.IsNullOrWhiteSpace(title.Text))
             {
                 MessageBox.Show(Properties.Resources.validqtitle, "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Stop);
                 Keyboard.Focus(title);
                 return false;
             }
-            else if (string.IsNullOrWhiteSpace(_desc.Text) || (!ValidationFile.IsAlphaNumeric(_desc.Text)))
+            else if (string.IsNullOrWhiteSpace(_desc.Text))
             {
                 MessageBox.Show(Properties.Resources.validdesc, "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Stop);
                 Keyboard.Focus(_desc);
@@ -208,7 +208,7 @@ namespace HamburgerMenuApp.Core.Views
                 Keyboard.Focus(sem);
                 return false;
             }
-            else if (string.IsNullOrWhiteSpace(url_add.Text) || (!ValidationFile.IsAlphaNumeric(url_add.Text)))
+            else if (string.IsNullOrWhiteSpace(url_add.Text))
             {
                 MessageBox.Show(Properties.Resources.validurladd, "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Stop);
                 Keyboard.Focus(url_add);

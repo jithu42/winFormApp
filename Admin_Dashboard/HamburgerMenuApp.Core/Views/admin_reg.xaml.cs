@@ -277,7 +277,7 @@ namespace HamburgerMenuApp.Core.Views
 
         public bool validate()
         {
-            if (string.IsNullOrWhiteSpace(std_name.Text) || (!ValidationFile.IsAlpha(std_name.Text)))
+            if (string.IsNullOrWhiteSpace(std_name.Text))
             {
                 MessageBox.Show(Properties.Resources.validname, "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Stop);
                 Keyboard.Focus(std_name);

@@ -95,6 +95,9 @@
     <Compile Include="Views\qpaper.xaml.cs">
       <DependentUpon>qpaper.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\reset_password.xaml.cs">
+      <DependentUpon>reset_password.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\std_reg.xaml.cs">
       <DependentUpon>std_reg.xaml</DependentUpon>
     </Compile>
@@ -134,6 +137,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\qpaper.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\reset_password.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

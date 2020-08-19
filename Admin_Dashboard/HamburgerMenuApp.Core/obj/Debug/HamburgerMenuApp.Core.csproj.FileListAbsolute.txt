@@ -309,3 +309,6 @@ D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debu
 D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.csproj.CopyComplete
 D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.dll
 D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.pdb
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.csprojAssemblyReference.cache
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\Views\reset_password.g.cs
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\Views\reset_password.baml

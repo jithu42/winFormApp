@@ -24,7 +24,10 @@ namespace HamburgerMenuApp.Core
             Regex r = new Regex("^[0-9]+$");
             if (r.IsMatch(val))
             {
-                return true;
+                if (val.Length == 10)
+                {
+                    return true;
+                }
             }
             return false;
         }

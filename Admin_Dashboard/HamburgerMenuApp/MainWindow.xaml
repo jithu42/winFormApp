@@ -125,24 +125,12 @@
                             <views:qpaper />
                         </controls:HamburgerMenuGlyphItem.Tag>
                     </controls:HamburgerMenuGlyphItem>
-                    <!--<controls:HamburgerMenuGlyphItem Glyph="&#xE77A;"
-                                                     Label="Night Parking">
+                    <controls:HamburgerMenuGlyphItem Glyph="&#xE713;"
+                                                     Label="Change Password">
                         <controls:HamburgerMenuGlyphItem.Tag>
-                            <views:home />
+                            <views:reset_password />
                         </controls:HamburgerMenuGlyphItem.Tag>
-                    </controls:HamburgerMenuGlyphItem>-->
-                    <!--<controls:HamburgerMenuGlyphItem Glyph="&#xE8FE;"
-                                                     Label="Re-Print Bill">
-                        <controls:HamburgerMenuGlyphItem.Tag>
-                            <views:home />
-                        </controls:HamburgerMenuGlyphItem.Tag>
-                    </controls:HamburgerMenuGlyphItem>-->
-                    <!--<controls:HamburgerMenuGlyphItem Glyph="&#xEA89;"
-                                                     Label="View sales">
-                        <controls:HamburgerMenuGlyphItem.Tag>
-                            <views:home />
-                        </controls:HamburgerMenuGlyphItem.Tag>
-                    </controls:HamburgerMenuGlyphItem>-->
+                    </controls:HamburgerMenuGlyphItem>
                 </controls:HamburgerMenuItemCollection>
             </controls:HamburgerMenu.ItemsSource>
 
