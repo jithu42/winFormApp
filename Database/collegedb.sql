@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 09, 2020 at 11:59 AM
+-- Generation Time: Aug 19, 2020 at 12:44 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.2.27
 
@@ -98,8 +98,7 @@ CREATE TABLE `login` (
 --
 
 INSERT INTO `login` (`id`, `admin_name`, `username`, `password`, `email`, `ph_no`, `gender`) VALUES
-(1, 'asdasd', 'admin', 'admin123', 'admin@gmail.com', '99865846565', 'Male'),
-(4, 'abhilash', 'abhi', 'B8F73F35', 'abhi.rogue@gmail.com', '9986506221', 'Male');
+(1, 'Administrator', 'admin', 'admin123', 'admin@gmail.com', '99865846565', 'Male');
 
 -- --------------------------------------------------------
 
