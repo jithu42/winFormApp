@@ -44,7 +44,7 @@ namespace HamburgerMenuApp.Core.Views
                 {
                     _mysql = new MysqlClass(constring);
                 }
-                string user = "admin";
+                string user = ValidationFile._getusername;
                 string password = curr_pass.Password;
                 string query = "Select * from login where username='" + user + "'  and password='" + password + "'";
                 DataSet dataSet = _mysql.ExecuteQueryReturnDataset(query);

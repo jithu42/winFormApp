@@ -9,11 +9,11 @@ namespace HamburgerMenuApp.Core
 {
     public class ValidationFile
     {
-        public static bool  IsAlphaNumeric(string val)
+        public static bool IsAlphaNumeric(string val)
         {
             Regex r = new Regex("^[a-zA-Z0-9_]+$");
             if (r.IsMatch(val))
-            {   
+            {
                 return true;
             }
             return false;
@@ -54,5 +54,7 @@ namespace HamburgerMenuApp.Core
             }
             return false;
         }
+
+        public static string _getusername { get; set; }
     }
 }

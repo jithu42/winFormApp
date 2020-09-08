@@ -107,6 +107,12 @@
                             <views:assignments />
                         </controls:HamburgerMenuGlyphItem.Tag>
                     </controls:HamburgerMenuGlyphItem>
+                    <controls:HamburgerMenuGlyphItem Glyph="&#xE8D8;"
+                                                     Label="Class TimeTable">
+                        <controls:HamburgerMenuGlyphItem.Tag>
+                            <views:classtimetable />
+                        </controls:HamburgerMenuGlyphItem.Tag>
+                    </controls:HamburgerMenuGlyphItem>
                     <controls:HamburgerMenuGlyphItem Glyph="&#xE8D1;"
                                                      Label="View Leaves">
                         <controls:HamburgerMenuGlyphItem.Tag>

@@ -226,6 +226,10 @@ namespace HamburgerMenuApp.Core.Views
                         MessageBox.Show("The Faculty record with " + reg_no.Text + " already Exists", "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Warning);
                         return;
                     }
+                    if (_mysql == null)
+                    {
+                        _mysql = new MysqlClass(constring);
+                    }
                     _mysql.Execute_query(query);
                     MessageBox.Show("The Faculty Record has been updated successfully.", "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Information);
                 }

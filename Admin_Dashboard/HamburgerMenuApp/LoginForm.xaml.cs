@@ -60,6 +60,7 @@ namespace HamburgerMenuApp
                     MainWindow mw = new MainWindow();
                     mw.Show();
                     MessageBox.Show("Welcome " + txtusername.Text, " GREETINGS", MessageBoxButton.OK, MessageBoxImage.Information);
+                    ValidationFile._getusername = txtusername.Text;
                     Close();
                 }
                 else
