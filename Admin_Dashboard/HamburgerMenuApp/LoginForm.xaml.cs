@@ -60,6 +60,7 @@ namespace HamburgerMenuApp
                     MainWindow mw = new MainWindow();
                     mw.Show();
                     MessageBox.Show("Welcome " + txtusername.Text, " GREETINGS", MessageBoxButton.OK, MessageBoxImage.Information);
+                    ValidationFile._getusername = txtusername.Text;
                     Close();
                 }
                 else
@@ -88,7 +89,7 @@ namespace HamburgerMenuApp
 
         private bool validate()
         {
-            if (string.IsNullOrWhiteSpace(txtusername.Text) || (!ValidationFile.IsAlphaNumeric(txtusername.Text)))
+            if (string.IsNullOrWhiteSpace(txtusername.Text))
             {
                 MessageBox.Show("Please enter the valid username", "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Information);
                 return false;

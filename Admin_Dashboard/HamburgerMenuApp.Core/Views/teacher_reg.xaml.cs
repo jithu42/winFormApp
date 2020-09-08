@@ -117,7 +117,7 @@ namespace HamburgerMenuApp.Core.Views
 
         public bool validate()
         {
-            if (string.IsNullOrWhiteSpace(std_name.Text) || (!ValidationFile.IsAlpha(std_name.Text)))
+            if (string.IsNullOrWhiteSpace(std_name.Text))
             {
                 MessageBox.Show(Properties.Resources.validfacultyname, "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Stop);
                 Keyboard.Focus(std_name);
@@ -153,7 +153,7 @@ namespace HamburgerMenuApp.Core.Views
                 Keyboard.Focus(email);
                 return false;
             }
-            else if (string.IsNullOrWhiteSpace(address.Text) || (!ValidationFile.IsAlphaNumeric(address.Text)))
+            else if (string.IsNullOrWhiteSpace(address.Text))
             {
                 MessageBox.Show(Properties.Resources.validaddress, "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Stop);
                 Keyboard.Focus(address);
@@ -225,6 +225,10 @@ namespace HamburgerMenuApp.Core.Views
                     {
                         MessageBox.Show("The Faculty record with " + reg_no.Text + " already Exists", "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Warning);
                         return;
+                    }
+                    if (_mysql == null)
+                    {
+                        _mysql = new MysqlClass(constring);
                     }
                     _mysql.Execute_query(query);
                     MessageBox.Show("The Faculty Record has been updated successfully.", "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Information);

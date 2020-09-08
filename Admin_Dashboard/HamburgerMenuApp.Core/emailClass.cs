@@ -19,11 +19,12 @@ namespace HamburgerMenuApp.Core
         {
             get { return ConfigurationManager.AppSettings["EmailPassword"]; }
         }
-        public static SmtpClient client = new SmtpClient();
-        public static MailMessage msg = new MailMessage();
+        
         public static System.Net.NetworkCredential smptCrede = new System.Net.NetworkCredential(Username, Password);
         public static bool SendEmail(string sendTo, string sendFrom, string subject, string body)
         {
+            SmtpClient client = new SmtpClient();
+            MailMessage msg = new MailMessage();
             try
             {
                 client.Host = "smtp.gmail.com";
@@ -39,7 +40,7 @@ namespace HamburgerMenuApp.Core
                 msg.To.Add(to);
                 client.Send(msg);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 return false;
             }

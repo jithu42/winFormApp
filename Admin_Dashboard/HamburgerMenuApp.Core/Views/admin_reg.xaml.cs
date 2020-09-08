@@ -160,6 +160,10 @@ namespace HamburgerMenuApp.Core.Views
                         MessageBox.Show("The Admin record with " + reg_no.Text + " already Exists", "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Warning);
                         return;
                     }
+                    if (_mysql == null)
+                    {
+                        _mysql = new MysqlClass(constring);
+                    }
                     _mysql.Execute_query(query);
                     MessageBox.Show("The Admin Record has been updated successfully.", "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
@@ -277,7 +281,7 @@ namespace HamburgerMenuApp.Core.Views
 
         public bool validate()
         {
-            if (string.IsNullOrWhiteSpace(std_name.Text) || (!ValidationFile.IsAlpha(std_name.Text)))
+            if (string.IsNullOrWhiteSpace(std_name.Text))
             {
                 MessageBox.Show(Properties.Resources.validname, "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Stop);
                 Keyboard.Focus(std_name);
