@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -82,7 +83,69 @@ namespace HamburgerMenuApp.Core.Views
 
         private void Btn_add_Click(object sender, RoutedEventArgs e)
         {
-            
+            string _class;
+            string _sem;
+            string _day;
+            bool subNotFound = false;
+            string _time;
+            int count = 0;
+            DataTable TT = new DataTable();
+            TT = ((DataView)datagrid.ItemsSource).ToTable();
+
+
+            DataTable sub = new DataTable();
+            sub = ((DataView)datagrid1.ItemsSource).ToTable();
+
+            if (TT != null)
+            {
+                foreach (DataRow row in TT.Rows)
+                {
+                    _day = string.Empty;
+
+                    for(int i=0;i<row.ItemArray.Length;i++)
+                    {
+                        if (i > 0)
+                        {
+                            count = 0;
+                            foreach (DataRow subrow in sub.Rows)
+                            {
+                                if (row.ItemArray[i].ToString().ToUpper() == subrow.ItemArray[0].ToString().ToUpper())
+                                {
+                                    _time = _getTime(TT, i);
+                                    break;
+                                }
+                                count = count + 1;
+                                if(count == subrow.ItemArray.Length - 1)
+                                {
+                                    subNotFound = true;
+                                }
+                            }
+                        }
+                        else
+                        {
+                            _day = row.ItemArray[0].ToString();
+                        }
+                    }
+                }
+            }
+        }
+
+        public string _getTime(DataTable timeTable, int index)
+        {
+            string value = string.Empty;
+            try
+            {
+                foreach (DataColumn col in timeTable.Columns)
+                {
+                    value = timeTable.Columns[index].ToString();
+                    break;
+                }
+                return value;
+            }
+            catch
+            {
+                return string.Empty;
+            }
         }
 
         private void Btn_clear_Click(object sender, RoutedEventArgs e)
