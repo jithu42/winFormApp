@@ -43,5 +43,6 @@
         <Button x:Name="btn_class" Content="browse" HorizontalAlignment="Left" Background="SkyBlue" Margin="149,191,0,0" VerticalAlignment="Top" Width="75"  FontFamily="Times New Roman" FontSize="11" FontWeight="Bold" Click="Btn_class_Click" TabIndex="9" Height="17"  />
         <Button x:Name="btn_sub" Content="browse" HorizontalAlignment="Left" Background="SkyBlue" Margin="697,29,0,0" VerticalAlignment="Top" Width="75"  FontFamily="Times New Roman" FontSize="11" FontWeight="Bold" Click="Btn_sub_Click" TabIndex="11" Height="17" />
         <Button x:Name="btn_view" Content="View" HorizontalAlignment="Left" Background="SkyBlue" Margin="149,233,0,0" VerticalAlignment="Top" Width="75" Visibility="Hidden"  FontFamily="Times New Roman" FontSize="11" FontWeight="Bold" Click="Btn_view_Click" TabIndex="12" Height="9" />
+        <Button x:Name="btn_del" Content="Delete" HorizontalAlignment="Left" Background="SkyBlue" Margin="338,233,0,0" VerticalAlignment="Top" Width="75"  FontFamily="Times New Roman" FontSize="11" FontWeight="Bold" Click="Btn_del_Click" TabIndex="12" Height="9" />
     </Grid>
 </UserControl>
