@@ -232,6 +232,10 @@ namespace HamburgerMenuApp.Core.Views
 
         private void Btn_view_Click(object sender, RoutedEventArgs e)
         {
+            if(!validateView())
+            {
+                return;
+            }
             loadTTGrid();
         }
 
@@ -367,6 +371,10 @@ namespace HamburgerMenuApp.Core.Views
 
         private void Btn_del_Click(object sender, RoutedEventArgs e)
         {
+            if(!validateView())
+            {
+                return;
+            }
             MessageBoxResult result = MessageBox.Show("Are you sure?, The TimeTable record for " + class_dept.Text + " " + sem.Text + " will be deleted.", "Confirmation", MessageBoxButton.OKCancel, MessageBoxImage.Warning);
             if (result == MessageBoxResult.OK)
             {
@@ -386,10 +394,16 @@ namespace HamburgerMenuApp.Core.Views
             }
         }
 
+        static List<string> day = new List<string>();
+        static List<string> classtime = new List<string>();
+        static List<string> subject = new List<string>();
+        static List<string> staffid = new List<string>();
+
         public void loadTTGrid()
         {
             try
             {
+                clearlist();
                 if (_mysql == null)
                 {
                     _mysql = new MysqlClass(constring);
@@ -402,10 +416,28 @@ namespace HamburgerMenuApp.Core.Views
                     {
                         foreach (DataRow dr in table.Rows)
                         {
-
+                            if(!day.Contains(dr.ItemArray[1].ToString()))
+                            {
+                                day.Add(dr.ItemArray[1].ToString());
+                            }
+                            if (!classtime.Contains(dr.ItemArray[2].ToString()))
+                            {
+                                classtime.Add(dr.ItemArray[2].ToString());
+                            }
+                            if (!subject.Contains(dr.ItemArray[5].ToString()) && dr.ItemArray[5].ToString() != string.Empty)
+                            {
+                                subject.Add(dr.ItemArray[5].ToString());
+                            }
                         }
                     }
-                    //faculty_grid.ItemsSource = ds.Tables[0].DefaultView;
+                    if (classtime.Count != 0)
+                    {
+                        createDataTable(ds);
+                    }
+                    else
+                    {
+                        MessageBox.Show("No TimeTable Data found.", "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                    }
                 }
                 _mysql.CloseConnection();
                 _mysql = null;
@@ -416,9 +448,75 @@ namespace HamburgerMenuApp.Core.Views
             }
         }
 
-        public void addTTdata()
+        private void createDataTable(DataSet ds)
         {
+            DataTable tableHead = new DataTable();
+            tableHead.Columns.Add("Day", typeof(string));
+            DataRow toInsert = tableHead.NewRow();
 
+            int index = 0;
+            string temp = string.Empty;
+            var itemArray = new object[classtime.Count + 1];
+
+            for (int i = 0; i<classtime.Count;i++)
+            {
+                tableHead.Columns.Add(classtime[i], typeof(string));
+            }
+
+            foreach (DataTable table in ds.Tables)
+            {
+                foreach (DataRow dr in table.Rows)
+                {
+                    if (temp != dr.ItemArray[1].ToString())
+                    {
+                        if(itemArray == null)
+                        {
+                            itemArray = new object[classtime.Count + 1];
+                        }
+                        temp = dr.ItemArray[1].ToString();
+                        index = 0;
+                        itemArray[index] = dr.ItemArray[1].ToString();
+                    }
+                    if (itemArray.Length-1 != index)
+                    {
+                        itemArray[index + 1] = dr.ItemArray[5].ToString();
+                        index++;
+                    }
+                    if (itemArray.Length - 1 == index)
+                    {
+                        toInsert.ItemArray = itemArray;
+                        tableHead.Rows.Add(toInsert.ItemArray);
+                        itemArray = null;
+                    }
+                }
+            }
+
+            datagrid.ItemsSource = tableHead.DefaultView;
+        }
+
+        public void clearlist()
+        {
+            day.Clear();
+            classtime.Clear();
+            subject.Clear();
+            staffid.Clear();
+        }
+
+        public bool validateView()
+        {
+            if (class_dept.SelectedIndex == 0)
+            {
+                MessageBox.Show(Properties.Resources.validdept, "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Stop);
+                Keyboard.Focus(class_dept);
+                return false;
+            }
+            else if (sem.SelectedIndex == 0)
+            {
+                MessageBox.Show(Properties.Resources.validsem, "St. Anne's Admin DashBoard", MessageBoxButton.OK, MessageBoxImage.Stop);
+                Keyboard.Focus(sem);
+                return false;
+            }
+            return true;
         }
     }
 }
