@@ -38,7 +38,7 @@ namespace HamburgerMenuApp.Core.Views
             btn_sub.IsEnabled = true;
             btn_add.Visibility = Visibility.Visible;
             btn_view.Visibility = Visibility.Hidden;
-            btn_del.Visibility = Visibility.Hidden;
+            //btn_del.Visibility = Visibility.Hidden;
         }
 
         MysqlClass _mysql = null;
@@ -247,14 +247,14 @@ namespace HamburgerMenuApp.Core.Views
             if(view_mode.SelectedIndex == 2)
             {
                 btn_view.Visibility = Visibility.Visible;
-                btn_del.Visibility = Visibility.Visible;
+                //btn_del.Visibility = Visibility.Visible;
                 btn_class.IsEnabled = false;
                 btn_sub.IsEnabled = false;
             }
             else if (view_mode.SelectedIndex == 1 || view_mode.SelectedIndex == 0)
             {
                 btn_view.Visibility = Visibility.Hidden;
-                btn_del.Visibility = Visibility.Hidden;
+                //btn_del.Visibility = Visibility.Hidden;
                 btn_class.IsEnabled = true;
                 btn_sub.IsEnabled = true;
             }
