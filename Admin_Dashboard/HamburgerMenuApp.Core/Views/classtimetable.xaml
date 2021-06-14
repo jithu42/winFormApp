@@ -13,9 +13,15 @@
         <Label x:Name="label4_Copy" Content="Semester" HorizontalAlignment="Left" Margin="26,102,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="15" FontWeight="Bold"/>
         <ComboBox x:Name="class_dept" HorizontalAlignment="Left" Margin="149,66,0,0" VerticalAlignment="Top" Width="155"  TabIndex="6" >
             <ComboBoxItem Content="--Select Department--"  Selector.IsSelected="True"/>
-            <ComboBoxItem Content="BCA" />
-            <ComboBoxItem Content="BBM"/>
+            <ComboBoxItem Content="BCA"/>
+            <ComboBoxItem Content="BBA"/>
             <ComboBoxItem Content="BCOM"/>
+            <ComboBoxItem Content="BA"/>
+            <ComboBoxItem Content="BSC(Rehab)"/>
+            <ComboBoxItem Content="MSC Psychology"/>
+            <ComboBoxItem Content="BSC(PMC)"/>
+            <ComboBoxItem Content="MA"/>
+            <ComboBoxItem Content="MCOM"/>
         </ComboBox>
         <ComboBox x:Name="sem" HorizontalAlignment="Left" Margin="149,105,0,0" VerticalAlignment="Top" Width="155" TabIndex="7">
             <ComboBoxItem Content="--Select Semester--" Selector.IsSelected="True"/>

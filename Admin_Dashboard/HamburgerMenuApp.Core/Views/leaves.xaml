@@ -13,8 +13,14 @@
         <ComboBox x:Name="search_class_dept" HorizontalAlignment="Left" Margin="132,30,0,0" VerticalAlignment="Top" Width="179" RenderTransformOrigin="-5.742,3.115"  >
             <ComboBoxItem Content="--Select Department--" Selector.IsSelected="True"/>
             <ComboBoxItem Content="BCA"/>
-            <ComboBoxItem Content="BBM"/>
+            <ComboBoxItem Content="BBA"/>
             <ComboBoxItem Content="BCOM"/>
+            <ComboBoxItem Content="BA"/>
+            <ComboBoxItem Content="BSC(Rehab)"/>
+            <ComboBoxItem Content="MSC Psychology"/>
+            <ComboBoxItem Content="BSC(PMC)"/>
+            <ComboBoxItem Content="MA"/>
+            <ComboBoxItem Content="MCOM"/>
         </ComboBox>
         <ComboBox x:Name="search_sem" HorizontalAlignment="Left" Margin="424,30,0,0" VerticalAlignment="Top" Width="179" RenderTransformOrigin="-5.742,3.115" >
             <ComboBoxItem Content="--Select Semester--" Selector.IsSelected="True"/>
