@@ -1,0 +1,316 @@
+C:\Users\SeizeCode\Desktop\code-samples-master\MahAppsMetroHamburgerMenu\HamburgerMenuApp.Core\bin\Debug\HamburgerMenuApp.Core.dll
+C:\Users\SeizeCode\Desktop\code-samples-master\MahAppsMetroHamburgerMenu\HamburgerMenuApp.Core\bin\Debug\HamburgerMenuApp.Core.pdb
+C:\Users\SeizeCode\Desktop\code-samples-master\MahAppsMetroHamburgerMenu\HamburgerMenuApp.Core\obj\Debug\Views\PrivateView.baml
+C:\Users\SeizeCode\Desktop\code-samples-master\MahAppsMetroHamburgerMenu\HamburgerMenuApp.Core\obj\Debug\Views\SettingsView.baml
+C:\Users\SeizeCode\Desktop\code-samples-master\MahAppsMetroHamburgerMenu\HamburgerMenuApp.Core\obj\Debug\Views\HomeView.baml
+C:\Users\SeizeCode\Desktop\code-samples-master\MahAppsMetroHamburgerMenu\HamburgerMenuApp.Core\obj\Debug\Views\AboutView.baml
+C:\Users\SeizeCode\Desktop\code-samples-master\MahAppsMetroHamburgerMenu\HamburgerMenuApp.Core\obj\Debug\Views\PrivateView.g.cs
+C:\Users\SeizeCode\Desktop\code-samples-master\MahAppsMetroHamburgerMenu\HamburgerMenuApp.Core\obj\Debug\Views\SettingsView.g.cs
+C:\Users\SeizeCode\Desktop\code-samples-master\MahAppsMetroHamburgerMenu\HamburgerMenuApp.Core\obj\Debug\Views\HomeView.g.cs
+C:\Users\SeizeCode\Desktop\code-samples-master\MahAppsMetroHamburgerMenu\HamburgerMenuApp.Core\obj\Debug\Views\AboutView.g.cs
+C:\Users\SeizeCode\Desktop\code-samples-master\MahAppsMetroHamburgerMenu\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core_MarkupCompile.cache
+C:\Users\SeizeCode\Desktop\code-samples-master\MahAppsMetroHamburgerMenu\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.g.resources
+C:\Users\SeizeCode\Desktop\code-samples-master\MahAppsMetroHamburgerMenu\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.Properties.Resources.resources
+C:\Users\SeizeCode\Desktop\code-samples-master\MahAppsMetroHamburgerMenu\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.csproj.GenerateResource.Cache
+C:\Users\SeizeCode\Desktop\code-samples-master\MahAppsMetroHamburgerMenu\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.dll
+C:\Users\SeizeCode\Desktop\code-samples-master\MahAppsMetroHamburgerMenu\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.pdb
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\obj\Debug\Views\day.g.cs
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\obj\Debug\Views\home.g.cs
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\obj\Debug\Views\hours.g.cs
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\obj\Debug\Views\month.g.cs
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\obj\Debug\Views\night.g.cs
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\obj\Debug\Views\reprint.g.cs
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\obj\Debug\Views\sales.g.cs
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core_MarkupCompile.cache
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core_MarkupCompile.lref
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\bin\Debug\HamburgerMenuApp.Core.dll
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\bin\Debug\HamburgerMenuApp.Core.pdb
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Data.v16.2.dll
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Mvvm.v16.2.dll
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Printing.v16.2.Core.dll
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Xpf.Controls.v16.2.dll
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Xpf.Core.v16.2.dll
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\bin\Debug\MySql.Data.dll
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Pdf.v16.2.Core.dll
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.CodeParser.v16.2.dll
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Data.v16.2.xml
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Mvvm.v16.2.xml
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Printing.v16.2.Core.xml
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Xpf.Controls.v16.2.xml
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Xpf.Core.v16.2.xml
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\bin\Debug\MySql.Data.xml
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Pdf.v16.2.Core.xml
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\bin\Debug\de\DevExpress.Data.v16.2.resources.dll
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\bin\Debug\es\DevExpress.Data.v16.2.resources.dll
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\bin\Debug\ja\DevExpress.Data.v16.2.resources.dll
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\bin\Debug\ru\DevExpress.Data.v16.2.resources.dll
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\bin\Debug\de\DevExpress.Printing.v16.2.Core.resources.dll
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\bin\Debug\es\DevExpress.Printing.v16.2.Core.resources.dll
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\bin\Debug\ja\DevExpress.Printing.v16.2.Core.resources.dll
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\bin\Debug\ru\DevExpress.Printing.v16.2.Core.resources.dll
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\bin\Debug\de\DevExpress.Xpf.Controls.v16.2.resources.dll
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\bin\Debug\es\DevExpress.Xpf.Controls.v16.2.resources.dll
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\bin\Debug\ja\DevExpress.Xpf.Controls.v16.2.resources.dll
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\bin\Debug\ru\DevExpress.Xpf.Controls.v16.2.resources.dll
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\bin\Debug\de\DevExpress.Xpf.Core.v16.2.resources.dll
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\bin\Debug\es\DevExpress.Xpf.Core.v16.2.resources.dll
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\bin\Debug\ja\DevExpress.Xpf.Core.v16.2.resources.dll
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\bin\Debug\ru\DevExpress.Xpf.Core.v16.2.resources.dll
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\bin\Debug\de\DevExpress.Pdf.v16.2.Core.resources.dll
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\bin\Debug\es\DevExpress.Pdf.v16.2.Core.resources.dll
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\bin\Debug\ja\DevExpress.Pdf.v16.2.Core.resources.dll
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\bin\Debug\ru\DevExpress.Pdf.v16.2.Core.resources.dll
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\obj\Debug\Views\day.baml
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\obj\Debug\Views\home.baml
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\obj\Debug\Views\hours.baml
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\obj\Debug\Views\month.baml
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\obj\Debug\Views\night.baml
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\obj\Debug\Views\reprint.baml
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\obj\Debug\Views\sales.baml
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.g.resources
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.Properties.Resources.resources
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.csproj.GenerateResource.Cache
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.dll.licenses
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.dll
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.pdb
+C:\Users\SeizeCode\Desktop\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.csprojResolveAssemblyReference.cache
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\HamburgerMenuApp.Core.dll
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\HamburgerMenuApp.Core.pdb
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Data.v16.2.dll
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Mvvm.v16.2.dll
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Printing.v16.2.Core.dll
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Xpf.Controls.v16.2.dll
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Xpf.Core.v16.2.dll
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\MySql.Data.dll
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Pdf.v16.2.Core.dll
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.CodeParser.v16.2.dll
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Data.v16.2.xml
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Mvvm.v16.2.xml
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Printing.v16.2.Core.xml
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Xpf.Controls.v16.2.xml
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Xpf.Core.v16.2.xml
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\MySql.Data.xml
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Pdf.v16.2.Core.xml
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\de\DevExpress.Data.v16.2.resources.dll
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\es\DevExpress.Data.v16.2.resources.dll
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\ja\DevExpress.Data.v16.2.resources.dll
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\ru\DevExpress.Data.v16.2.resources.dll
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\de\DevExpress.Printing.v16.2.Core.resources.dll
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\es\DevExpress.Printing.v16.2.Core.resources.dll
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\ja\DevExpress.Printing.v16.2.Core.resources.dll
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\ru\DevExpress.Printing.v16.2.Core.resources.dll
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\de\DevExpress.Xpf.Controls.v16.2.resources.dll
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\es\DevExpress.Xpf.Controls.v16.2.resources.dll
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\ja\DevExpress.Xpf.Controls.v16.2.resources.dll
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\ru\DevExpress.Xpf.Controls.v16.2.resources.dll
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\de\DevExpress.Xpf.Core.v16.2.resources.dll
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\es\DevExpress.Xpf.Core.v16.2.resources.dll
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\ja\DevExpress.Xpf.Core.v16.2.resources.dll
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\ru\DevExpress.Xpf.Core.v16.2.resources.dll
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\de\DevExpress.Pdf.v16.2.Core.resources.dll
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\es\DevExpress.Pdf.v16.2.Core.resources.dll
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\ja\DevExpress.Pdf.v16.2.Core.resources.dll
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\ru\DevExpress.Pdf.v16.2.Core.resources.dll
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.csprojResolveAssemblyReference.cache
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\Views\day.g.cs
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\Views\home.g.cs
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\Views\hours.g.cs
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\Views\month.g.cs
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\Views\night.g.cs
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\Views\reprint.g.cs
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\Views\sales.g.cs
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core_MarkupCompile.cache
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core_MarkupCompile.lref
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\Views\day.baml
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\Views\home.baml
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\Views\hours.baml
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\Views\month.baml
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\Views\night.baml
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\Views\reprint.baml
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\Views\sales.baml
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.g.resources
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.Properties.Resources.resources
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.csproj.GenerateResource.Cache
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.dll.licenses
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.dll
+C:\Users\SeizeCode\Desktop\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.pdb
+D:\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\HamburgerMenuApp.Core.dll
+D:\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\HamburgerMenuApp.Core.pdb
+D:\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Pdf.v16.2.Core.dll
+D:\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.CodeParser.v16.2.dll
+D:\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Data.v16.2.xml
+D:\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Mvvm.v16.2.xml
+D:\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Printing.v16.2.Core.xml
+D:\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Xpf.Controls.v16.2.xml
+D:\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Xpf.Core.v16.2.xml
+D:\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\MySql.Data.xml
+D:\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Pdf.v16.2.Core.xml
+D:\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\de\DevExpress.Data.v16.2.resources.dll
+D:\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\es\DevExpress.Data.v16.2.resources.dll
+D:\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\ja\DevExpress.Data.v16.2.resources.dll
+D:\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\ru\DevExpress.Data.v16.2.resources.dll
+D:\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\de\DevExpress.Printing.v16.2.Core.resources.dll
+D:\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\es\DevExpress.Printing.v16.2.Core.resources.dll
+D:\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\ja\DevExpress.Printing.v16.2.Core.resources.dll
+D:\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\ru\DevExpress.Printing.v16.2.Core.resources.dll
+D:\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\de\DevExpress.Xpf.Controls.v16.2.resources.dll
+D:\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\es\DevExpress.Xpf.Controls.v16.2.resources.dll
+D:\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\ja\DevExpress.Xpf.Controls.v16.2.resources.dll
+D:\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\ru\DevExpress.Xpf.Controls.v16.2.resources.dll
+D:\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\de\DevExpress.Xpf.Core.v16.2.resources.dll
+D:\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\es\DevExpress.Xpf.Core.v16.2.resources.dll
+D:\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\ja\DevExpress.Xpf.Core.v16.2.resources.dll
+D:\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\ru\DevExpress.Xpf.Core.v16.2.resources.dll
+D:\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\de\DevExpress.Pdf.v16.2.Core.resources.dll
+D:\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\es\DevExpress.Pdf.v16.2.Core.resources.dll
+D:\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\ja\DevExpress.Pdf.v16.2.Core.resources.dll
+D:\completed interns project\Parking\HamburgerMenuApp.Core\bin\Debug\ru\DevExpress.Pdf.v16.2.Core.resources.dll
+D:\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.csprojAssemblyReference.cache
+D:\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\Views\day.g.cs
+D:\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\Views\home.g.cs
+D:\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\Views\hours.g.cs
+D:\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\Views\month.g.cs
+D:\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\Views\night.g.cs
+D:\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\Views\reprint.g.cs
+D:\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\Views\sales.g.cs
+D:\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core_MarkupCompile.cache
+D:\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core_MarkupCompile.lref
+D:\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\Views\day.baml
+D:\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\Views\home.baml
+D:\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\Views\hours.baml
+D:\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\Views\month.baml
+D:\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\Views\night.baml
+D:\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\Views\reprint.baml
+D:\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\Views\sales.baml
+D:\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.g.resources
+D:\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.Properties.Resources.resources
+D:\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.csproj.GenerateResource.cache
+D:\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.dll.licenses
+D:\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.csproj.CoreCompileInputs.cache
+D:\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.csproj.CopyComplete
+D:\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.dll
+D:\completed interns project\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.pdb
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\bin\Debug\HamburgerMenuApp.Core.dll
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\bin\Debug\HamburgerMenuApp.Core.pdb
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Pdf.v16.2.Core.dll
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.CodeParser.v16.2.dll
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Data.v16.2.xml
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Mvvm.v16.2.xml
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Printing.v16.2.Core.xml
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Xpf.Controls.v16.2.xml
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Xpf.Core.v16.2.xml
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\bin\Debug\MySql.Data.xml
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\bin\Debug\DevExpress.Pdf.v16.2.Core.xml
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\bin\Debug\de\DevExpress.Data.v16.2.resources.dll
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\bin\Debug\es\DevExpress.Data.v16.2.resources.dll
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\bin\Debug\ja\DevExpress.Data.v16.2.resources.dll
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\bin\Debug\ru\DevExpress.Data.v16.2.resources.dll
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\bin\Debug\de\DevExpress.Printing.v16.2.Core.resources.dll
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\bin\Debug\es\DevExpress.Printing.v16.2.Core.resources.dll
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\bin\Debug\ja\DevExpress.Printing.v16.2.Core.resources.dll
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\bin\Debug\ru\DevExpress.Printing.v16.2.Core.resources.dll
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\bin\Debug\de\DevExpress.Xpf.Controls.v16.2.resources.dll
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\bin\Debug\es\DevExpress.Xpf.Controls.v16.2.resources.dll
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\bin\Debug\ja\DevExpress.Xpf.Controls.v16.2.resources.dll
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\bin\Debug\ru\DevExpress.Xpf.Controls.v16.2.resources.dll
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\bin\Debug\de\DevExpress.Xpf.Core.v16.2.resources.dll
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\bin\Debug\es\DevExpress.Xpf.Core.v16.2.resources.dll
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\bin\Debug\ja\DevExpress.Xpf.Core.v16.2.resources.dll
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\bin\Debug\ru\DevExpress.Xpf.Core.v16.2.resources.dll
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\bin\Debug\de\DevExpress.Pdf.v16.2.Core.resources.dll
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\bin\Debug\es\DevExpress.Pdf.v16.2.Core.resources.dll
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\bin\Debug\ja\DevExpress.Pdf.v16.2.Core.resources.dll
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\bin\Debug\ru\DevExpress.Pdf.v16.2.Core.resources.dll
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\obj\Debug\Views\home.g.cs
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core_MarkupCompile.cache
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core_MarkupCompile.lref
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\obj\Debug\Views\home.baml
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.g.resources
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.Properties.Resources.resources
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.csproj.GenerateResource.cache
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.dll.licenses
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.csproj.CopyComplete
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.dll
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.pdb
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\obj\Debug\Views\std_reg.g.cs
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\obj\Debug\Views\std_reg.baml
+C:\Users\NS-Admin\Downloads\New folder\Parking\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.csprojAssemblyReference.cache
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\bin\Debug\HamburgerMenuApp.Core.dll
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\bin\Debug\HamburgerMenuApp.Core.pdb
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\bin\Debug\DevExpress.Pdf.v16.2.Core.dll
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\bin\Debug\DevExpress.CodeParser.v16.2.dll
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\bin\Debug\DevExpress.Data.v16.2.xml
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\bin\Debug\DevExpress.Mvvm.v16.2.xml
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\bin\Debug\DevExpress.Printing.v16.2.Core.xml
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\bin\Debug\DevExpress.Xpf.Controls.v16.2.xml
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\bin\Debug\DevExpress.Xpf.Core.v16.2.xml
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\bin\Debug\MySql.Data.xml
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\bin\Debug\DevExpress.Pdf.v16.2.Core.xml
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\bin\Debug\de\DevExpress.Data.v16.2.resources.dll
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\bin\Debug\es\DevExpress.Data.v16.2.resources.dll
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\bin\Debug\ja\DevExpress.Data.v16.2.resources.dll
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\bin\Debug\ru\DevExpress.Data.v16.2.resources.dll
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\bin\Debug\de\DevExpress.Printing.v16.2.Core.resources.dll
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\bin\Debug\es\DevExpress.Printing.v16.2.Core.resources.dll
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\bin\Debug\ja\DevExpress.Printing.v16.2.Core.resources.dll
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\bin\Debug\ru\DevExpress.Printing.v16.2.Core.resources.dll
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\bin\Debug\de\DevExpress.Xpf.Controls.v16.2.resources.dll
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\bin\Debug\es\DevExpress.Xpf.Controls.v16.2.resources.dll
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\bin\Debug\ja\DevExpress.Xpf.Controls.v16.2.resources.dll
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\bin\Debug\ru\DevExpress.Xpf.Controls.v16.2.resources.dll
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\bin\Debug\de\DevExpress.Xpf.Core.v16.2.resources.dll
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\bin\Debug\es\DevExpress.Xpf.Core.v16.2.resources.dll
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\bin\Debug\ja\DevExpress.Xpf.Core.v16.2.resources.dll
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\bin\Debug\ru\DevExpress.Xpf.Core.v16.2.resources.dll
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\bin\Debug\de\DevExpress.Pdf.v16.2.Core.resources.dll
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\bin\Debug\es\DevExpress.Pdf.v16.2.Core.resources.dll
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\bin\Debug\ja\DevExpress.Pdf.v16.2.Core.resources.dll
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\bin\Debug\ru\DevExpress.Pdf.v16.2.Core.resources.dll
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.csprojAssemblyReference.cache
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\Views\home.g.cs
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\Views\std_reg.g.cs
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core_MarkupCompile.cache
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core_MarkupCompile.lref
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\Views\home.baml
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\Views\std_reg.baml
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.g.resources
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.Properties.Resources.resources
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.csproj.GenerateResource.cache
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.dll.licenses
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.csproj.CopyComplete
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.dll
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.pdb
+C:\Users\hp\Desktop\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\Views\teacher_reg.g.cs
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\bin\Debug\HamburgerMenuApp.Core.dll
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\bin\Debug\HamburgerMenuApp.Core.pdb
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\Views\admin_reg.g.cs
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\Views\assignments.g.cs
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\Views\events.g.cs
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\Views\home.g.cs
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\Views\leaves.g.cs
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\Views\qpaper.g.cs
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\Views\std_reg.g.cs
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\Views\teacher_reg.g.cs
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core_MarkupCompile.cache
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core_MarkupCompile.lref
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\Views\admin_reg.baml
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\Views\assignments.baml
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\Views\events.baml
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\Views\home.baml
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\Views\leaves.baml
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\Views\qpaper.baml
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\Views\std_reg.baml
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\Views\teacher_reg.baml
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.g.resources
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.Properties.Resources.resources
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.csproj.GenerateResource.cache
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.dll.licenses
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.csproj.CoreCompileInputs.cache
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.csproj.CopyComplete
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.dll
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.pdb
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\HamburgerMenuApp.Core.csprojAssemblyReference.cache
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\Views\reset_password.g.cs
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\Views\reset_password.baml
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\Views\classtimetable.g.cs
+D:\GIT_Admin_dashboard\winFormApp\Admin_Dashboard\HamburgerMenuApp.Core\obj\Debug\Views\classtimetable.baml
