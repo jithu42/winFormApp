@@ -31,10 +31,10 @@
         <Button x:Name="btn_clear" Content="Clear" HorizontalAlignment="Left" Background="SkyBlue" Margin="252,266,0,0" VerticalAlignment="Top" Width="75"  FontFamily="Times New Roman" FontSize="11" FontWeight="Bold" Click="Btn_clear_Click" TabIndex="13" />
 
 
-        <Border BorderBrush="SkyBlue" BorderThickness="2" HorizontalAlignment="Left" Height="336" Margin="465,13,0,0" VerticalAlignment="Top" Width="755"/>
+        <Border BorderBrush="SkyBlue" BorderThickness="2" HorizontalAlignment="Left" Height="336" Margin="465,13,0,0" VerticalAlignment="Top" Width="549"/>
         <Label x:Name="label2_Copy3" Content="Search Student" HorizontalAlignment="Left" Margin="494,25,0,0" VerticalAlignment="Top"  FontFamily="Times New Roman" FontSize="15" FontWeight="Bold" />
         <TextBox x:Name="search_std_name" HorizontalAlignment="Left" Height="23" Margin="607,25,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="155"/>
-        <DataGrid x:Name="student_grid" HorizontalAlignment="Left" AutoGenerateColumns="False" MouseDoubleClick="Student_grid_MouseDoubleClick"  Height="Auto" Margin="494,73,0,0" VerticalAlignment="Top" IsReadOnly="True" Width="497">
+        <DataGrid x:Name="student_grid" HorizontalAlignment="Left" AutoGenerateColumns="False" MouseDoubleClick="Student_grid_MouseDoubleClick"  Height="258" Margin="494,73,0,0" VerticalAlignment="Top" IsReadOnly="True" Width="497">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="id" Visibility="Hidden" Binding="{Binding id}">
                     <DataGridTextColumn.ElementStyle>

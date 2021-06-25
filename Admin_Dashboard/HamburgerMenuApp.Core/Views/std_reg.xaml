@@ -84,7 +84,7 @@
             <ComboBoxItem Content="5"/>
             <ComboBoxItem Content="6"/>
         </ComboBox>
-        <DataGrid x:Name="student_grid" HorizontalAlignment="Left" AutoGenerateColumns="False" MouseDoubleClick="Student_grid_MouseDoubleClick"  Height="Auto" Margin="488,110,0,0" VerticalAlignment="Top" IsReadOnly="True" Width="711">
+        <DataGrid x:Name="student_grid" HorizontalAlignment="Left" AutoGenerateColumns="False" MouseDoubleClick="Student_grid_MouseDoubleClick"  Height="416" Margin="488,110,0,0" VerticalAlignment="Top" IsReadOnly="True" Width="711">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="id" Visibility="Hidden" Binding="{Binding id}">
                     <DataGridTextColumn.ElementStyle>

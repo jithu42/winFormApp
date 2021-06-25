@@ -31,7 +31,7 @@
             <ComboBoxItem Content="5"/>
             <ComboBoxItem Content="6"/>
         </ComboBox>
-        <DataGrid x:Name="assign_grid" HorizontalAlignment="Left" AutoGenerateColumns="False"  Width="774"  Height="Auto" Margin="30,159,0,0" VerticalAlignment="Top" IsReadOnly="True">
+        <DataGrid x:Name="assign_grid" HorizontalAlignment="Left" AutoGenerateColumns="False"  Width="774"  Height="366" Margin="30,159,0,0" VerticalAlignment="Top" IsReadOnly="True">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="id" Visibility="Hidden" Binding="{Binding id}">
                     <DataGridTextColumn.ElementStyle>

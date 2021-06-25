@@ -65,7 +65,7 @@
             <ComboBoxItem Content="5"/>
             <ComboBoxItem Content="6"/>
         </ComboBox>
-        <DataGrid x:Name="qpaper_grid" HorizontalAlignment="Left" AutoGenerateColumns="False" MouseDoubleClick="Qpaper_grid_MouseDoubleClick" Width="696"  Height="Auto" Margin="494,126,0,0" VerticalAlignment="Top" IsReadOnly="True">
+        <DataGrid x:Name="qpaper_grid" HorizontalAlignment="Left" AutoGenerateColumns="False" MouseDoubleClick="Qpaper_grid_MouseDoubleClick" Width="696"  Height="403" Margin="494,126,0,0" VerticalAlignment="Top" IsReadOnly="True">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="id" Visibility="Hidden" Binding="{Binding id}">
                     <DataGridTextColumn.ElementStyle>
